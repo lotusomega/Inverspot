@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Inverspot | Tu punto de inversión inmobiliario</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="icon" type="images/png" href="/style/images/favicon.png"/>
+    
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style\css\bootstrap-responsive.css">
+	<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="/style/inverspot.min.css">
+	<link rel="stylesheet" href="/style/master.css">
+	<link rel="stylesheet" href="/style/card.css">
+	<link rel="stylesheet" href="/style/login-register.css"/>
+	<link rel="stylesheet" href="style\css\normalize.css" />
+    <link rel="stylesheet" href="style/css/bootstrap-theme.min.css">
+    
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/jquery.min.js"></script>
+	<script src="script/login-register.js"></script>
+	<script src="script/inverspot.min.js"></script>
+    <script src="script/user.js"></script>
+    <script src="script/npm.js"></script>
+    
+</head>
+
+<body>
+       
+        <nav class="navbar navbar-light bg-faded navbar-fixed-top" style="background-color: #fff;">
+         
+          <div class="col-xs-12 col-lg-12" style="background-color: #4B118E; width=100%; height: 29px;">
+            <p style="padding: 5px; margin-left: 100px; font-size: 12px; color: white;">
+            Atención al cliente | 01 (55) 8000 6555 | 
+            <a class="hidden-xs hidden-sm" style="color: #ffffff; text-decoration: none;" href="mailto:hola@inverspot.mx">hola@inverspot.mx</a>
+            <a class="hidden-xs hidden-sm" style="float:right; margin-right: 100px; color: white;" href="https://www.facebook.com/inverspot" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a></p>
+
+          </div>
+          
+          <div class="navbar-header top-logo-holder">
+            <a href="/"><div class="icon-logo-main"></div></a>
+            <p>Tu punto de inversión inmobiliario</p>
+            <button style="background-color: #4b118e;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+          
+          
+          <div class="navbar-collapse collapse top-tittle-holder">
+            <ul class="nav navbar-nav" style="margin: 9px -15px!important;">  
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+              <li><a href="como-funciona.html">Como Funciona</a></li>
+              <li><a href="garantia.html">Garantia</a></li>
+              <li><a href="faqs.html">FAQ's</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li id='reg'><a data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Regístro</a></li>
+              <li id='acc'><a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Inicio de Sesión</a></li>
+              
+                <!--Menu desplegable de Usuario Registrado-->
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bienvenido
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Mi Perfil</a></li>
+                  <li><a href="#">Mis Inversiones</a></li>
+                  <li><a href="#">Salir</a></li>
+                </ul>
+              </li> 
+            </ul>
+          </div>
+        </nav>
+
+
+        <div class="spacer double" style="height: 80px;"></div>
+        
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="6500" id="bs-carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item slides active">
+              <div class="slide-1"></div>
+              <div class="hero">
+                <hgroup>
+                    <h1>¡Invertir $100,000 en<br>inmuebles es posible!</h1>        
+                    <h3 class="hidden-xs hidden-sm">Inverspot, la primera plataforma de crownfounding inmobiliario que te permite invertir a plazo o de contado en México</h3>
+                    <div class="hidden-xs hidden-sm btn-promo col-xs-6 col-sm-6 col-md-6">
+                        <a href="/inmuebles">
+                        <button style="padding: 15px 20px; font-family: AvenirNext-Bold; display: inline-block;">Ver inmuebles</button></a>
+                    </div>
+                    <div class="btn-promo col-xs-6 col-sm-6 col-md-6">
+                        <button style="padding: 15px 20px; font-family: AvenirNext-Bold; display: inline-block;" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Registrate aquí</button>
+                    </div>
+                </hgroup> 
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-2"></div>
+              <div class="hero">        
+                <hgroup>
+                    <h1>¡Invertir $100,000 en<br>inmuebles es posible!</h1>        
+                    <h3 class="hidden-xs hidden-sm">Inverspot, la primera plataforma de crownfounding inmobiliario que te permite invertir a plazo o de contado en México</h3>
+                    <div class="hidden-xs hidden-sm btn-promo col-xs-6 col-sm-6 col-md-6">
+                        <a href="/inmuebles">
+                        <button style="padding: 15px 20px; font-family: AvenirNext-Bold; display: inline-block;">Ver inmuebles</button></a>
+                    </div>
+                    <div class="btn-promo col-xs-6 col-sm-6 col-md-6">
+                        <button style="padding: 15px 20px; font-family: AvenirNext-Bold; display: inline-block;" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Registrate aquí</button>
+                    </div>
+                </hgroup> 
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-3"></div>
+              <div class="hero">        
+                <hgroup>
+                    <h1>¡Invertir $100,000 en<br>inmuebles es posible!</h1>        
+                    <h3 class="hidden-xs hidden-sm">Inverspot, la primera plataforma de crownfounding inmobiliario que te permite invertir a plazo o de contado en México</h3>
+                    <div class="hidden-xs hidden-sm btn-promo col-xs-6 col-sm-6 col-md-6">
+                        <a href="/inmuebles">
+                        <button style="padding: 15px 20px; font-family: AvenirNext-Bold; display: inline-block;">Ver inmuebles</button></a>
+                    </div>
+                    <div class="btn-promo col-xs-6 col-sm-6 col-md-6">
+                        <button style="padding: 15px 20px; font-family: AvenirNext-Bold; display: inline-block;" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Registrate aquí</button>
+                    </div>
+                </hgroup> 
+              </div>
+            </div>
+          </div> 
+        </div>
+        
+        <div class="container">
+          
+           <!--Fichas de las Propiedades-->
+            <div class="row main-container propiedades">
+                    <div class="spacer double"></div>
+                    <h1><b>Proyectos para Invertir</b></h1>
+                    <div class="spacer triple"></div>
+
+                    <!--Fichas-->
+                    <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                        <div class="card-v" style="border-radius: 10px;">
+                            <div class="row header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
+                                <div class="col-xs-12 col-sm-4 col-md-4 left" style="margin-top: 10px; margin-bottom: 10px;">
+                                    <h1 style="color: white; font-weight: 900;">Proyeto de departamento</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8 right" style="margin-top: 10px; margin-bottom: 10px;">
+                                    <h2 class="Doctores" style="font-size: 12px; font-weight: 400; color: white;">Doctores</h2>
+                                    <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row header-holder" style="margin-top: -20px;">
+                                <div class="investment-holder col-xs-12 col-sm-12 col-md-12">
+                                    <p class="p-promo" style="margin-top: 14px;">Invierte desde <span>$50,000</span> pesos</p>
+                                </div>
+                            </div>
+                            <figure class="main-card-image">
+                                <a href="/inmuebles/doctores">
+                                    <img src="http://placehold.it/400">
+                                    <div class="fondeada-layer">
+                                        <p class="Doctores">PROYECTO FONDEADO</p>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="row progress-bar-holder">
+                                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$650,000</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">$1,000,000</p></div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
+                                    <div class="range" style="background-color: #4b118e; width:65%"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
+                                    <p style="color: #f00;"><span style="color: #f00;">13</span> Acciones disponibles de <span style="color: #f00;">20</span></p>
+                                </div>
+                                <hr class="hr-card">
+                            </div>
+                            <div class="info-cols-holder ">
+
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">MONTO A INVERTIR</p>
+                                    <div class="icon icon-bill"></div>
+                                    <p>$ 4,000<br>mensual</p>
+                                </div>
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">PLAZO ESTIMADO</p>
+                                    <div class="icon icon-calendar"></div>
+                                    <p>12 meses</p>
+                                </div>
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">RENDIMIENTO ESTIMADO</p>
+                                    <div class="icon icon-coins"></div>
+                                    <p>12%</p>
+                                </div>
+                            </div>
+                            <div class="row btns-holder">
+                                <a href="/inmuebles/doctores"><button class="button btn-v-card left">Ver más</button></a>
+                                <button class="button  btn-v-card right">Invertir</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                        <div class="card-v" style="border-radius: 10px;">
+                            <div class="row header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
+                                <div class="col-xs-12 col-sm-4 col-md-4 left" style="margin-top: 10px; margin-bottom: 10px;">
+                                    <h1 style="color: white; font-weight: 900;">Proyeto de casa</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8 right" style="margin-top: 10px; margin-bottom: 10px;">
+                                    <h2 class="Prueba inmueble" style="font-size: 12px; font-weight: 400; color: white;">Prueba inmueble</h2>
+                                    <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row header-holder" style="margin-top: -20px;">
+                                <div class="investment-holder col-xs-12 col-sm-12 col-md-12">
+                                    <p class="p-promo" style="margin-top: 14px;">Invierte desde <span>$200,000</span> pesos</p>
+                                </div>
+                            </div>
+                            <figure class="main-card-image">
+                                <a href="/inmuebles/prueba">
+                                    <img src="http://placehold.it/400">
+                                    <div class="fondeada-layer">
+                                        <p class="Prueba inmueble">PROYECTO FONDEADO</p>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="row progress-bar-holder">
+                                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$1,600,000</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">$ 2,000,000</p></div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
+                                    <div class="range" style="background-color: #4b118e; width:80%"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
+                                    <p style="color: #f00;"><span style="color: #f00;">8</span> Acciones disponibles de <span style="color: #f00;">10</span></p>
+                                </div>
+                                <hr class="hr-card">
+                            </div>
+                            <div class="info-cols-holder ">
+
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">MONTO A INVERTIR</p>
+                                    <div class="icon icon-bill"></div>
+                                    <p>$1,500<br>mensual</p>
+                                </div>
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">PLAZO ESTIMADO</p>
+                                    <div class="icon icon-calendar"></div>
+                                    <p>18 meses</p>
+                                </div>
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">RENDIMIENTO ESTIMADO</p>
+                                    <div class="icon icon-coins"></div>
+                                    <p>45% mensual</p>
+                                </div>
+                            </div>
+                            <div class="row btns-holder">
+                                <a href="/inmuebles/prueba"><button class="button btn-v-card left">Ver más</button></a>
+                                <button class="button  btn-v-card right">Invertir</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                        <div class="card-v" style="border-radius: 10px;">
+                            <div class="row header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
+                                <div class="col-xs-12 col-sm-4 col-md-4 left" style="margin-top: 10px; margin-bottom: 10px;">
+                                    <h1 style="color: white; font-weight: 900;">Proyeto de departamento</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8 right" style="margin-top: 10px; margin-bottom: 10px;">
+                                    <h2 class="Tlalpan 1439" style="font-size: 12px; font-weight: 400; color: white;">Tlalpan 1439</h2>
+                                    <p style="font-size: 12px; font-weight: 400; color: white;">Col Country Club</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row header-holder" style="margin-top: -20px;">
+                                <div class="investment-holder col-xs-12 col-sm-12 col-md-12">
+                                    <p class="p-promo" style="margin-top: 14px;">Invierte desde <span>$100,000</span> pesos</p>
+                                </div>
+                            </div>
+                            <figure class="main-card-image">
+                                <a href="#">
+                                    <img src="http://placehold.it/400">
+                                    <div class="fondeada-layer">
+                                        <p>PROYECTO FONDEADO</p>
+                                    </div>
+                                </a>
+                            </figure>
+                            <div class="row progress-bar-holder">
+                                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$300,000</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">5000000</p></div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
+                                    <div class="range" style="background-color: #4b118e; width:6%"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
+                                    <p style="color: #f00;"><span style="color: #f00;">3</span> Acciones disponibles de <span style="color: #f00;">50</span></p>
+                                </div>
+                                <hr class="hr-card">
+                            </div>
+                            <div class="info-cols-holder ">
+
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">MONTO A INVERTIR</p>
+                                    <div class="icon icon-bill"></div>
+                                    <p>$1,500<br>mensual</p>
+                                </div>
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">PLAZO ESTIMADO</p>
+                                    <div class="icon icon-calendar"></div>
+                                    <p>18 meses</p>
+                                </div>
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">RENDIMIENTO ESTIMADO</p>
+                                    <div class="icon icon-coins"></div>
+                                    <p>45% mensual</p>
+                                </div>
+                            </div>
+                            <div class="row btns-holder">
+                                <a href="/inmuebles/desarrollo-tlalpan-1439"><button class="button btn-v-card left">Ver más</button></a>
+                                <button class="button  btn-v-card right">Invertir</button>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class="spacer triple"></div>
+
+            <!--Newsletter-->
+            <div class="row main-container registro-section suscribe">
+                <div class="spacer"></div>
+                    <h1>Newsletter</h1>
+                    <h2>Suscríbete</h2>
+                    <p class="hidden-xs hidden-sm">Suscríbete para recibir e-mails con nuevos proyectos, noticias y mucho más</p>
+                    <form data-toggle="validator" role="form">
+                       <div class="form-group col-xs-12 col-sm-8 col-sm-offset-1 col-centered">
+                            <input type="email" class="form-control input-sm caja" id="inputEmail" data-error="La dirección de correo es invalida" name="newsletter" style="" placeholder="">
+                             <div class="help-block with-errors"></div>
+                       </div>
+                       <div class="form-group col-xs-12 col-sm-2 col-centered" style="margin-left: -24px; margin-top: 6px;">
+                            <input class="button large-invertion bton" type="submit" value="Enviar" type="button" style="">
+                        </div>
+                   </form>
+            </div>
+
+            <div class="spacer double"></div>
+
+            <!--Fichas de las Propiedades Fondeadas-->
+            <div class="row main-container propiedades">
+                    <div class="spacer double"></div>
+                    <h1><b>Proyectos Fondeados</b></h1>
+                    <div class="spacer triple"></div>
+
+                    <!--Fichas-->
+                    <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                        <div class="card-v fondeada" style="">
+            <div class="row header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
+                <div class="col-xs-12 col-sm-4 col-md-4 left" style="margin-top: 10px; margin-bottom: 10px;">
+                    <h1 style="color: white; font-weight: 900;">Proyeto de oficina</h1>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 right" style="margin-top: 10px; margin-bottom: 10px;">
+                    <h2 class="Claudio Bernad 24" style="font-size: 12px; font-weight: 400; color: white;">Claudio Bernad 24</h2>
+                    <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
+                </div>
+            </div>
+
+
+            <div class="row header-holder" style="margin-top: -20px;">
+                <div class="investment-holder col-xs-12 col-sm-12 col-md-12">
+                    <p class="p-promo" style="margin-top: 14px;">Invierte desde <span>$200,000</span> pesos</p>
+                </div>
+            </div>
+            <figure class="main-card-image">
+                <a href="/inmuebles/claudio-bernad-24">
+                    <img src="http://placehold.it/400">
+                    <div class="fondeada-layer">
+                        <p class="Claudio Bernad 24">PROYECTO FONDEADO</p>
+                    </div>
+                </a>
+            </figure>
+            <div class="row progress-bar-holder">
+                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$3,000,000</p></div>
+                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">$3,000,000</p></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
+                    <div class="range" style="background-color: #4b118e; width:100%"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
+                    <p style="color: #f00;"><span style="color: #f00;">15</span> Acciones disponibles de <span style="color: #f00;">15</span></p>
+                </div>
+                <hr class="hr-card">
+            </div>
+            <div class="info-cols-holder ">
+
+                <div class="col col-xs-4 col-sm-4 col-md-4">
+                    <p class="tit">MONTO A INVERTIR</p>
+                    <div class="icon icon-bill"></div>
+                    <p>$17,000 mensual</p>
+                </div>
+                <div class="col col-xs-4 col-sm-4 col-md-4">
+                    <p class="tit">PLAZO ESTIMADO</p>
+                    <div class="icon icon-calendar"></div>
+                    <p>12 meses</p>
+                </div>
+                <div class="col col-xs-4 col-sm-4 col-md-4">
+                    <p class="tit">RENDIMIENTO ESTIMADO</p>
+                    <div class="icon icon-coins"></div>
+                    <p>46% a<br>22 meses</p>
+                </div>
+            </div>
+            <div class="row btns-holder">
+                <a href="/inmuebles/claudio-bernad-24"><button class="button btn-v-card left">Ver más</button></a>
+                <button class="button  btn-v-card right">Invertir</button>
+            </div>
+        </div>
+                    </div>
+                    
+            </div>
+            
+            <div class="spacer triple"></div>
+            
+            <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-centered">
+                        <div class="box-banner">							
+                            <div>
+                                <img src="/style/images/sellspot.png" class="img-fluid" style="float: left; width: 250px;" alt="Responsive image">
+                                <div class="col-xs-12">
+                                    <h2 style="font-size: 26px; text-align: left;">Promueve propiedades y gana<br>comisiones</h2>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-centered">
+                        <div class="box-banner">							
+                            <div>
+                                <img src="/style/images/premiumspot.png" class="img-fluid" style="float: right; width: 370px;" alt="Responsive image">
+                                <div  class="col-xs-12">
+                                    <h2 style="font-size: 26px; text-align: right;">Buscas inversiones superiores<br>a <b>$500,000</b></h2>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>	        	    	    
+            </div>
+            
+            <div class="spacer triple"></div>
+            
+            <!--Incribirse-->
+            <div class="row jumbotron main-container registro-section">
+                <div class="spacer"></div>
+                <h2>Invertir con nosotros es rápido, seguro y sencillo</h2>
+                <div class="spacer"></div>
+                <p>Con el objetivo de democratizar la inversión en el sector inmobiliario, hemos diseñado un método sencillo para la selección de inmueble ideal. Invertir nunca fue más sencillo.</p>
+                <button class="button">Comenzar registro</button>
+            </div>
+            
+            <div class="spacer triple"></div>
+            
+            <!--Slider ellos hablan-->
+            <div class="row">
+                <div class="col-xs-1 col-md-3 col-lg-12">
+
+                    <div class="row main-container hidden-xs">
+                        <div class="spacer double"></div>
+                        <h1><b>Ellos Hablan de Nosotros</b></h1>
+                        <div class="spacer double"></div>
+                    </div> 
+                    <div class="carousel slide hidden-xs" id="myCarousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                    <ul class="thumbnails">
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="http://expansion.mx/emprendedores/2016/08/10/mexicano-crea-inverspot-una-nueva-opcion-para-invertir-en-bienes-raices">
+                                                    <img src="/style/images/logos/expansion.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="https://es-us.noticias.yahoo.com/plataformas-fondeo-colectivo-reguladas-motor-crecimiento-135131032--finance.html">
+                                                    <img src="/style/images/logos/ntx.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="#tecnoempresa"><img src="/style/images/logos/tecnoempresa.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="http://mundoejecutivo.com.mx/pymes/2016/07/06/crowdfunding-alto-potencial-economico-mexico"><img src="/style/images/logos/mundo-ejecutivo.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                              </div><!-- /Slide1 --> 
+                            <div class="item">
+                                    <ul class="thumbnails">
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="http://www.revistaneodigital.com/articles/2016/07/08/inverspot-para-inversiones-inmobiliarias"><img src="/style/images/logos/ned.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="http://ebusinesshoy.com/inverspot-cualquiera-puede-volverse-inversionista/"><img src="/style/images/logos/ebussineshoy.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="http://www.sinembargo.mx/21-08-2016/3082279">
+                                                    <img src="/style/images/logos/sinembargo.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="http://expansion.mx/emprendedores/2016/08/10/mexicano-crea-inverspot-una-nueva-opcion-para-invertir-en-bienes-raices">
+                                                    <img src="/style/images/logos/expansion.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                              </div><!-- /Slide2 --> 
+                            <div class="item">
+                                    <ul class="thumbnails">
+                                        <li class="col-sm-3">	
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="#wradio"><img src="/style/images/logos/w.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="http://www.imagenradio.com.mx/rodrigo-pacheco/inverspot-proyecto-de-inversion-inmobiliaria-online"><img src="/style/images/logos/imagen.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="http://eleconomista.com.mx/fondos/2016/07/06/plataformas-fondeo-colectivo-reguladas-motor-crecimiento"><img src="/style/images/logos/eleconomista.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="fff">
+                                                <div class="thumbnail">
+                                                    <a href="#milenio"><img src="/style/images/logos/milenio.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                              </div><!-- /Slide3 --> 
+                        </div>
+                   </div>
+                </div> 
+            </div> 
+            
+            
+        </div>
+
+
+       <!--Footer-->
+        <section>
+           <!--Divider-->
+            <div class="container">
+            <div class="row">
+                <div class="divider col-xs-3 col-sm-3 col-lg-12">
+                </div>
+            </div>
+        </div>
+           
+           <!--Accesos directos-->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <div class="icon-logo-main"></div>
+                            <p class="logop">Tu punto de inversión inmubiliario</p>
+                                <ul>
+                                    <li><p>Avenida de las Palmas 1320<br> Lomas de Chapultepec, CDMX</p></li>
+                                    <li><p><a href="tel:015580006555"></a>01 (55) 8000 6555</p></li>
+                                    <li><p><a href="mailto:hola@inverspot.mx">hola@inverspot.mx</a></p></li>
+                                </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <h2><b>Recursos</b></h2>
+                            <ul>
+                                <li><a href="/solicitud-de-registro">Solicitud de registro</a></li>
+                                <li><a href="politicas-de-privacidad.html">Políticas de privacidad</a></li><li><a href="http://spot_files.softin.mx/2016/12/brochure.pdf">Brochure informativo</a></li>
+                                <li><a href="/como-invertir">¿Cómo invertir?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <h2><b>Soporte</b></h2>
+                            <ul>
+                                <li><a href="/ayuda">Ayuda</a></li><li><a href="/informe">Informe</a></li><li><a href="/desarrolladores">Desarrolladores</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <h2><b>Inverspot.mx</b></h2>
+                            <ul>
+                                <li><a href="solicitud-de-inversion.html">Solicitud de Inversión</a>
+                                </li><li><a href="faqs.html">FAQ's</a></li>
+                                <li><a href="aviso-de-privacidad.html">Aviso de privacidad</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="garantia.html">Garantia</a></li>
+                                <li><a href="nosotros.html">Nosotros</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="como-funciona.html">Como Funciona</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        
+        <div class="spacer"></div>
+                
+	    <div class="end-bar">©2017 inverspot.mx | All Rights reserved</div>
+
+
+       <!--Modal de Registro y de Ingreso-->
+		 <div class="modal fade login" id="loginModal">
+		      <div class="modal-dialog login animated">
+                   
+                    <!--Cabecera del Modal-->
+    		      <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    		        <div class="modal-header header-holder">
+					<div class="modal-tit" style="">Bienvenido a</div>
+					<img src="/style/images/inverspot.png" class="img-fluid-login" alt="Responsive image">
+                    <br><br>
+                    </div>
+                    
+                    <!--Modal de Login-->
+                    <div class="modal-body">  
+                        <div class="box">
+                                <div class="content registerBox" style="display:none;">
+                                     <div class="form">
+                                        <h1>Regístrate <small style="color: #4B118E;"> Ingresa tus datos</small></h1>
+                                        
+                                        <hr>
+
+                                        <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8" data-toggle="validator" role="form">
+
+                                        <div class="form-group">
+                                                <input type="text" class="form-control input-sm"id="name" placeholder="Tu nombre" required="required">
+
+                                                <input id="email" class="form-control input-sm" type="email" data-error="La dirección de correo es invalida"   placeholder="Email" name="email" required="required">
+
+                                                <input id="password" class="form-control input-sm" type="password" placeholder="Password" name="password" required="required">
+
+                                                <input id="password_confirmation" class="form-control input-sm" type="password" placeholder="Repeat Password" name="password_confirmation" required="required">
+
+                                                <input type="text" class="form-control input-sm" name="phone" id="phone" placeholder="Tu teléfono" required="required" />
+
+                                                <div class="control-group">
+                                                    <div class="select" style="margin-bottom: 5px;">
+                                                        <select id="subject" name="subject" class="form-control" required="required" style="height: 30px;">
+                                                            <option value="na" selected="">¿Quién te atendió?</option>
+                                                            <option value="service">Soy desarrollador y deseo subir mi proyecto</option>
+                                                            <option value="suggestions">Soy proveedor y deseo brindar mis servicios</option>
+                                                            <option value="product">Soy cliente y tengo dudas</option>
+                                                        </select>
+                                                        <div class="select__arrow"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="control-group">
+                                                    <div class="select" style="margin-bottom: 5px;">
+                                                        <select id="subject" name="subject" class="form-control" required="required" style="height: 30px;">
+                                                            <option value="na" selected="">Estado</option>
+                                                            <option value="Agu">Aguascalientes</option>
+                                                            <option value="Bc">Baja California</option>
+                                                            <option value="Bcs">Baja California Sur</option>
+                                                            <option value="Cam">Campeche</option>
+                                                            <option value="Chis">Chiapas</option>
+                                                            <option value="Chi">Chihuahua</option>
+                                                            <option value="Cdm">Ciudad de México</option>
+                                                            <option value="Coa">Coahuila</option>
+                                                            <option value="Col">Colima</option>
+                                                            <option value="Dur">Durango</option>
+                                                            <option value="Edm">Estado de México</option>
+                                                            <option value="Gua">Guanajuato</option>
+                                                            <option value="Gue">Guerrero</option>
+                                                            <option value="Hid">Hidalgo</option>
+                                                            <option value="Jal">Jalisco</option>
+                                                            <option value="Mic">Michoacán</option>
+                                                            <option value="Mor">Morelos</option>
+                                                            <option value="Nay">Nayarit</option>
+                                                            <option value="Nle">Nuevo León</option>
+                                                            <option value="Oax">Oaxaca</option>
+                                                            <option value="Pue">Puebla</option>
+                                                            <option value="Qro">Querétaro</option>
+                                                            <option value="Qur">Quintana Roo</option>
+                                                            <option value="Snl">San Luis Potosí</option>
+                                                            <option value="Sin">Sinaloa</option>
+                                                            <option value="Son">Sonora</option>
+                                                            <option value="Tab">Tabasco</option>
+                                                            <option value="Tam">Tamaulipas</option>
+                                                            <option value="Tla">Tlaxcala</option>
+                                                            <option value="Ver">Veracruz</option>
+                                                            <option value="Yuc">Yucatán</option>
+                                                            <option value="Zac">Zacatecas</option>
+                                                        </select>
+                                                        <div class="select__arrow"></div>
+                                                    </div>
+                                            </div>
+
+                                            <div class="control-group">
+                                                <div class="select" style="margin-bottom: 5px;">
+                                                    <select id="subject" name="subject" class="form-control" required="required" style="height: 30px;">
+                                                        <option>¿Cómo nos conociste?</option>
+                                                        <option value="Facebook">Facebook</option>
+                                                        <option value="Twitter">Twitter</option>
+                                                        <option value="Google">Google</option>
+                                                        <option value="Asesor">Asesor</option>
+                                                        <option value="Otro">Otro</option>
+                                                    </select>
+                                                    <div class="select__arrow"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="input-group" style="float: left; margin-left: 10px;">
+                                              <div class="checkbox">
+                                                  <label style="font-size: 12px;">
+                                                      <input id="login-remember" type="checkbox" name="remember" value="1"> Acepto avisos de política y privacidad             
+                                                  </label>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid">
+                                          <div class="row">
+                                            <div class="col-sm-6">
+                                                <button class="loginBtn loginBtn--facebook">Login with Facebook</button>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input class="button btn-register" style="margin-left: 10px; padding: 15px 0px;" type="submit" value="Enviar" name="commit">
+                                            </div>
+                                          </div>
+                                        </div> 
+                                       
+                                      </form>
+                                    </div>
+                               </div>
+                        </div>
+                    </div>
+                    
+                    <!--Modal de Login-->
+                    <div class="modal-body">  
+                        <div class="box">
+                                 <div class="content">
+                                        <div class="form loginBox">
+                                            <h1 style="">Iniciar sesión</h1>
+
+                                            <hr>
+
+                                            <div class="error"></div>
+                                            <form method="post" action="/login" accept-charset="UTF-8">                    
+                                            <input id="email" class="form-control" type="text" placeholder="Usuario o correo electrónico" name="email">
+                                            <input id="password" class="form-control" type="password" placeholder="Contraseña" name="password">
+                                            <div class="input-group" style="float: left; margin-left: 10px;">
+                                              <div class="checkbox">
+                                                  <label style="font-size: 13px;">
+                                                      <input id="login-remember" type="checkbox" name="remember" value="1"> No cerrar sesión              
+                                                  </label>
+                                              </div>
+                                            </div>
+                                            <div class="control control-login" style="margin-top: 8px;">
+                                                <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                                    ¿Olvide mi contraseña?
+                                                </a>
+                                            </div>
+                                            <input class="button btn-login" type="button" value="Enviar" onclick="loginAjax()">
+                                            </form>
+                                        </div>
+                                 </div>
+                        </div>
+                    </div>
+                    
+                    <!--Footer del Modal-->
+                    <div class="modal-footer">
+                        <div class="forgot login-footer">                        
+                            <span>¿No tienes una cuenta?
+                                 <a href="javascript: showRegisterForm();" style="font-size: 14px;">Registrate con Nosotros</a></span>
+                        </div>
+                        <div class="forgot register-footer">
+                             <span>Ya tengo mi cuenta</span>
+                             <a href="javascript: showLoginForm();" style="font-size: 14px;">Ingresa</a>
+                        </div>
+                    </div>        
+    		      </div>
+		      </div>
+		  </div>
+
+
+       
+        <!--script-->
+        <script>
+          $(document).ready(function() {
+            $('.carousel').carousel({
+              interval: 3000
+            })
+          });
+        </script>
+        <script>
+        $(function(){
+            $('#show').on('click',function(){        
+                $('.card-reveal').slideToggle('slow');
+            });
+
+            $('.card-reveal .close').on('click',function(){
+                $('.card-reveal').slideToggle('slow');
+            });
+        });
+        </script>
+        <script>
+        $(document).ready(function() {
+        $(".btn-pref .btn").click(function () {
+            $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+            // $(".tab").addClass("active"); // instead of this do the below 
+            $(this).removeClass("btn-default").addClass("btn-primary");   
+        });
+        });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('.fancybox').fancybox({
+                    padding : 0,
+                    openEffect  : 'elastic',
+                    closeBtn: false
+                });
+            });
+        </script>
+        <script>
+            $('.carousel').carousel();
+        </script>
+        
+        
+</body >
+</html >
