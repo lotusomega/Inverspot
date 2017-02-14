@@ -2,22 +2,23 @@
     font-family: "AvenirNext-Regular";
     font-style: normal;
     font-weight: normal;
-    src:url(/style/fonts/AvenirNext-Regular.eot?#iefix) format('embedded-opentype'),url(/style/fonts/AvenirNext-Regular.woff) format('woff'),url(AvenirNext-Regular.ttf) format('truetype'),url(/style/fonts/AvenirNext-Regular.svg#AvenirNext-Regular) format('svg');
+    src: url(fonts/AvenirNext-Regular.ttf);
 }
 
 @font-face {
     font-family: "AvenirNext-Medium";
     font-style: normal;
     font-weight: normal;
-    src:url(/style/fonts/AvenirNext-Medium.eot?#iefix) format('embedded-opentype'),url(/style/fonts/AvenirNext-Medium.woff) format('woff'),url(/style/fonts/AvenirNext-Medium.ttf) format('truetype'),url(/style/fonts/AvenirNext-Medium.svg#AvenirNext-Medium) format('svg');
-}
+    src: url(fonts/AvenirNext-Medium.ttf);
+  }
 
 @font-face {
     font-family: "AvenirNext-Bold";
     font-style: normal;
     font-weight: normal;
-    src:url(/style/fonts/AvenirNext-Bold.eot?#iefix) format('embedded-opentype'),url(/style/fonts/AvenirNext-Bold.woff) format('woff'),url(/style/fonts/AvenirNext-Bold.ttf) format('truetype'),url(/style/fonts/AvenirNext-Bold.svg#AvenirNext-Bold) format('svg');
-}
+    src: url(fonts/AvenirNext-Bold.ttf);
+  }
+
 .body {
     font-family: AvenirNext-Regular;
 }
@@ -902,9 +903,9 @@ a {
 }
 
 .navbar-brand, .navbar-nav>li>a {
-    text-shadow: 0 1px 0 rgba(255,255,255,.25);
-    font-weight: bold;
-    font-size: 14px!important;
+    font-family: AvenirNext-Bold;
+    font-size: 15px!important;
+    font-weight: 400;
 }
 
 .nav>li>a {
