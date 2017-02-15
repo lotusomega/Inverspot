@@ -23,6 +23,34 @@
     font-family: AvenirNext-Regular;
 }
 
+.purple-text {
+    color: #4B118E;
+}
+
+.high-text {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-family: AvenirNext-Bold;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px;
+    color: #ff513c;
+}
+
+.subhigh-text {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: AvenirNext-Bold;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 10px;
+    color: #4B118E;
+}
+
+.progress-bar-holder p {
+    margin: 5px;
+    color: #4B118E;
+}
 
 .triple {
     height: 80px;
@@ -1181,13 +1209,18 @@ a {
 }
 
 .circle .tittle{
+    font-family: AvenirNext-Bold;
+    font-weight: 900;
     line-height: 100%; 
     margin-top: 8px;
 }
 
 .circle .subtittle{
+    font-family: AvenirNext-Bold;
+    font-weight: 900;
     color: #ff513c; 
     line-height: 200%;
+    margin-top: -3px;
 }
 
 .image-card .subtittle{
@@ -1375,7 +1408,7 @@ box-shadow: inset 0 1px 1px rgba(255,255,255,.4);
     margin-bottom: 17px;
 }
 .btn-pref .btn {
-    -webkit-border-radius:0 !important;
+    -webkit-border-radius:0!important;
 }
 
 .panel-primary {
@@ -1386,9 +1419,77 @@ box-shadow: inset 0 1px 1px rgba(255,255,255,.4);
     line-height: 14px!important;
 }
 
+.titulo-ficha {
+    font-family: AvenirNext-Bold;
+    color: white; 
+    font-weight: 900;
+}
 
+.subtitulo-ficha {
+    font-family: AvenirNext-Regular;
+    color: white; 
+    margin-top: 20px; 
+    float: right; 
+    font-weight: 100;
+}
 
+      .box{
+          width: 100%;
+          height: 100%;
+          opacity: 0.9;
+          position: absolute;                       
+          top: 0px;
+          left: 0px;
+      }
 
+.blue{
+   background: rgba(0, 0, 255, 0.33);
+   z-index: 3;
+}
+
+.imagen { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.imagen .h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+.imagen .h2 .span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+.btn-grande {
+    padding: 13px 13px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+    border-radius: 0px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4b118e!important;
+    border-color: #4b118e!important;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #731abf;
+}
 
 .big-lead {
    font-size: 40px;
