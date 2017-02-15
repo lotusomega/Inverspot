@@ -1433,6 +1433,44 @@ box-shadow: inset 0 1px 1px rgba(255,255,255,.4);
     font-weight: 100;
 }
 
+.subtitulo {
+    margin-top: -3px; 
+    font-family: AvenirNext-Bold;
+}
+
+.subtitulo2 {
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    font-family: AvenirNext-Bold;
+}
+
+.large-counter {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    background-color: #4B118E;
+    border: 1px solid #4B118E;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: AvenirNext-Bold;
+    color: white;
+}
+.counter {
+    font-family: AvenirNext-Bold;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    color: #FF3C00;
+}
+
+.counter2 {
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    font-family: AvenirNext-Bold;
+    color: #FF3C00;
+}
+
+
       .box{
           width: 100%;
           height: 100%;
