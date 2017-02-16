@@ -194,6 +194,19 @@ footer ul p {
     color: #ff0000!important;
 }
 
+.buttoncounter {
+    padding: 20px 40px;
+    color: #4b118e;
+    background-color: #ffffff;
+    font-weight: 600;
+    padding: 9px 18px;
+    border: 1px #4b118e;
+    font-family: AvenirNext-Regular;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -1221,6 +1234,23 @@ a {
 
 .large-invertion:hover {
     background-color: #ff513c;
+}
+
+.large-confirm {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    background-color: #c3c3c3;
+    border: 1px solid #c3c3c3;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: AvenirNext-Bold;
+    color: black;
+}
+
+.large-confirm:hover {
+    background-color: #c3c3c3;
 }
 
 .card-large p {
