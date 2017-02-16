@@ -568,8 +568,8 @@
 	    <div class="end-bar">©2017 inverspot.mx | All Rights reserved</div>
 
 
-       <!--Modal de Registro y de Ingreso-->
-		 <div class="modal fade login" id="loginModal">
+        <!--Modal de Registro y de Ingreso-->
+        <div class="modal fade login" id="loginModal">
 		      <div class="modal-dialog login animated">
                    
                     <!--Cabecera del Modal-->
@@ -681,7 +681,7 @@
                                         <div class="container-fluid">
                                           <div class="row">
                                             <div class="col-sm-6">
-                                                <button class="loginBtn loginBtn--facebook">Login with Facebook</button>
+                                                <button class="loginBtn loginBtn--facebook">Sing in with Facebook</button>
                                             </div>
                                             <div class="col-sm-6">
                                                 <input class="button btn-register" style="margin-left: 10px; padding: 15px 0px;" type="submit" value="Enviar" name="commit">
@@ -716,11 +716,18 @@
                                               </div>
                                             </div>
                                             <div class="control control-login" style="margin-top: 8px;">
-                                                <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                                <a  data-target="#pwdModal" data-toggle="modal" class="close" data-dismiss="modal" style="font-size: 12px; margin-top: 8px; color: black;">
                                                     ¿Olvide mi contraseña?
                                                 </a>
                                             </div>
+                                            <br>
                                             <input class="button btn-login" type="button" value="Enviar" onclick="loginAjax()">
+                                            <hr>
+                                            <a class="btn btn-block btn-social btn-facebook">
+                                                <i class="fa fa-facebook"></i> Login with Facebook
+                                            </a><br>
+
+
                                             </form>
                                         </div>
                                  </div>
@@ -741,6 +748,8 @@
     		      </div>
 		      </div>
 		  </div>
+        <!--modal de Registro y de Ingreso-->
+
 
 
         <!--Modal de Recuperación de Contraseña-->
@@ -763,7 +772,7 @@
                             <div class="panel-body" style="background-color: #4B118E;">
                             <fieldset style="border: 1px solid #4b118e;">
                                 <div class="col-sm-8 form-group">
-                                    <input class="form-control input-lg" name="email" type="email" style="margin-top: 10px; font-family: AvenirNext-Bold; font-size: 20px; color: #4b118e; padding-left: 30px;">
+                                    <input class="form-control input-lg" name="email" type="email" style="margin-top: 10px; font-family: AvenirNext-Bold; font-size: 20px; color: #4b118e;">
                                 </div>
                                 <div class="col-sm-4">
                                     <button class="button large-invertion" style="margin-top: 10px;" data-toggle="modal" data-target="#invertir-modal2" class="close" data-dismiss="modal">Enviar</button>
@@ -777,9 +786,9 @@
           </div>
           </div>
         </div>
-        <!--modal de Recuperación de Contraseña-->        
+        <!--modal de Recuperación de Contraseña-->
 
-       
+
 
 <script src="/script/inverspot.min.js"></script>
 <script src="/script/user.js"></script>

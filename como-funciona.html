@@ -24,10 +24,8 @@
 	<script type="text/javascript" src="script/inverspot.min.js"></script>
     <script type="text/javascript" src="script/user.js"></script>
     <script type="text/javascript" src="script/npm.js"></script>
-<script src="/script/user.js"></script>
-<script src="js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+    <script src="/script/user.js"></script>
+    <script src="js/jquery.js"></script>
     
 </head>
 <body>
@@ -429,7 +427,7 @@
                                               </div>
                                             </div>
                                             <div class="control control-login" style="margin-top: 8px;">
-                                                <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                                <a  data-target="#pwdModal" data-toggle="modal" class="close" data-dismiss="modal" style="font-size: 12px; margin-top: 8px; color: black;">
                                                     ¿Olvide mi contraseña?
                                                 </a>
                                             </div>
@@ -463,6 +461,9 @@
 		  </div>
         <!--modal de Registro y de Ingreso-->
 
+        
+
+
         <!--Modal de Recuperación de Contraseña-->
         <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog">
@@ -483,7 +484,7 @@
                             <div class="panel-body" style="background-color: #4B118E;">
                             <fieldset style="border: 1px solid #4b118e;">
                                 <div class="col-sm-8 form-group">
-                                    <input class="form-control input-lg" name="email" type="email" style="margin-top: 10px; font-family: AvenirNext-Bold; font-size: 20px; color: #4b118e; padding-left: 30px;">
+                                    <input class="form-control input-lg" name="email" type="email" style="margin-top: 10px; font-family: AvenirNext-Bold; font-size: 20px; color: #4b118e;">
                                 </div>
                                 <div class="col-sm-4">
                                     <button class="button large-invertion" style="margin-top: 10px;" data-toggle="modal" data-target="#invertir-modal2" class="close" data-dismiss="modal">Enviar</button>
@@ -497,7 +498,9 @@
           </div>
           </div>
         </div>
-        <!--modal de Recuperación de Contraseña-->        
+        <!--modal de Recuperación de Contraseña-->
+
+      
 
        
 
