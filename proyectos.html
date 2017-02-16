@@ -135,7 +135,7 @@
                             </div>             
                             <div class="spacer"></div>
                             <div class="col-sm-6">
-                                <button class="button large-invertion">Aparta tu lugar aquí</button>
+                                <button class="button large-invertion" data-toggle="modal" data-target="#invertir-modal">Aparta tu lugar aquí</button>
                                 <h5 class="subtitulo text-center"><b>¡Contacta un asesor aquí!</b></h5>
                             </div>
                             <div class="col-sm-6">
@@ -204,7 +204,7 @@
                             </div>             
                             <div class="spacer"></div>
                             <div class="col-sm-6">
-                                <button class="button large-invertion">Aparta tu lugar aquí</button>
+                                <button class="button large-invertion" data-toggle="modal" data-target="#invertir-modal">Aparta tu lugar aquí</button>
                                 <h5 class="subtitulo text-center"><b>¡Contacta un asesor aquí!</b></h5>
                             </div>
                             <div class="col-sm-6">
@@ -273,7 +273,7 @@
                             </div>             
                             <div class="spacer"></div>
                             <div class="col-sm-6">
-                                <button class="button large-invertion">Aparta tu lugar aquí</button>
+                                <button class="button large-invertion" data-toggle="modal" data-target="#invertir-modal">Aparta tu lugar aquí</button>
                                 <h5 class="subtitulo text-center"><b>¡Contacta un asesor aquí!</b></h5>
                             </div>
                             <div class="col-sm-6">
@@ -342,7 +342,7 @@
                             </div>             
                             <div class="spacer"></div>
                             <div class="col-sm-6">
-                                <button class="button large-invertion">Aparta tu lugar aquí</button>
+                                <button class="button large-invertion" data-toggle="modal" data-target="#invertir-modal">Aparta tu lugar aquí</button>
                                 <h5 class="subtitulo text-center"><b>¡Contacta un asesor aquí!</b></h5>
                             </div>
                             <div class="col-sm-6">
@@ -821,7 +821,7 @@
                                         <div class="container-fluid">
                                           <div class="row">
                                             <div class="col-sm-6">
-                                                <button class="loginBtn loginBtn--facebook">Login with Facebook</button>
+                                                <button class="loginBtn loginBtn--facebook">Sing in with Facebook</button>
                                             </div>
                                             <div class="col-sm-6">
                                                 <input class="button btn-register" style="margin-left: 10px; padding: 15px 0px;" type="submit" value="Enviar" name="commit">
@@ -860,7 +860,14 @@
                                                     ¿Olvide mi contraseña?
                                                 </a>
                                             </div>
+                                            <br>
                                             <input class="button btn-login" type="button" value="Enviar" onclick="loginAjax()">
+                                            <hr>
+                                            <a class="btn btn-block btn-social btn-facebook">
+                                                <i class="fa fa-facebook"></i> Login with Facebook
+                                            </a><br>
+
+
                                             </form>
                                         </div>
                                  </div>
@@ -884,6 +891,26 @@
         <!--modal de Registro y de Ingreso-->
 
 
+        <!--Modal de Inversión 1-->
+        <div class="modal fade" id="invertir-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+                    <div class="col-sm-12">
+                        <img class="img-responsive center-block" src="style/images/inverspot.png"/>
+                        <div class="spacer"></div>
+                        <p class="text-center text-modal">Quiero invertir en esta propiedad</p>
+                        <div class="col-sm-12">
+                            <button class="button large-invertion" style="margin-top: 2px;">Invertir</button>
+                        </div>
+                        <p class="text-center text-modal">Si tienes dudas, contáctanos</p>
+                        <p class="text-center" style="font-size: 12px; color: white;">*Si no cuentas con el 100% del pago<br>inicial te podemos financiar</p>
+                    </div>
+				</div>
+			</div>
+		 </div>
+        <!--modal de Inversión 1-->
+
+
 
 
 <script>
@@ -905,12 +932,24 @@ $(function(){
 });
 </script>
 <script>
-$(document).ready(function() {
-$(".btn-pref .btn").click(function () {
-    $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
-    // $(".tab").addClass("active"); // instead of this do the below 
-    $(this).removeClass("btn-default").addClass("btn-primary");   
-});
+$(function () {
+  var all_classes = "";
+  var timer = undefined;
+  $.each($('li', '.social-class'), function (index, element) {
+    all_classes += " btn-" + $(element).data("code");
+  });
+  $('li', '.social-class').mouseenter(function () {
+    var icon_name = $(this).data("code");
+    if ($(this).data("icon")) {
+      icon_name = $(this).data("icon");
+    }
+    var icon = "<i class='fa fa-" + icon_name + "'></i>";
+    $('.btn-social', '.social-sizes').html(icon + "Sign in with " + $(this).data("name"));
+    $('.btn-social-icon', '.social-sizes').html(icon);
+    $('.btn', '.social-sizes').removeClass(all_classes);
+    $('.btn', '.social-sizes').addClass("btn-" + $(this).data('code'));
+  });
+  $($('li', '.social-class')[Math.floor($('li', '.social-class').length * Math.random())]).mouseenter();
 });
 </script>
 <script>
@@ -948,7 +987,6 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
-    
 </script>
 
 </body >
