@@ -23,34 +23,6 @@
     font-family: AvenirNext-Regular;
 }
 
-.purple-text {
-    color: #4B118E;
-}
-
-.high-text {
-    margin-top: 25px;
-    margin-bottom: 0px;
-    font-family: AvenirNext-Bold;
-    font-size: 40px;
-    font-weight: 900;
-    padding: 10px;
-    color: #ff513c;
-}
-
-.subhigh-text {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-family: AvenirNext-Bold;
-    font-size: 24px;
-    font-weight: 900;
-    padding: 10px;
-    color: #4B118E;
-}
-
-.progress-bar-holder p {
-    margin: 5px;
-    color: #4B118E;
-}
 
 .triple {
     height: 80px;
@@ -98,8 +70,8 @@
     height: 45px;
 }
 
-.fondeada{
-    border-radius: 10px;
+.fondeada {
+    border-radius: 5px;
 }
 
 .registro-section {
@@ -119,15 +91,108 @@ footer ul p {
     font-family: AvenirNext-Regular; 
 }
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-/*
-body {
-  color: #5a5a5a;
+.headspace {
+    height: 180px;
 }
-*/
+
+.progress-bar-holder .range-txt p {
+    text-align: center;
+    font-weight: 100;
+    margin: 0px;
+    margin-top: 5px;
+    font-family: AvenirNext-Bold;
+}
+
+.card-v .main-card-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.large-counter {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    background-color: #4B118E;
+    border: 1px solid #4B118E;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: AvenirNext-Bold;
+    color: white;
+}
+.counter {
+    font-family: AvenirNext-Bold;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    color: #FF3C00;
+}
+
+.counter2 {
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    font-family: AvenirNext-Bold;
+    color: #FF3C00;
+}
+
+.info-cols-holder .col p {
+    margin: 0;
+    font-size: 16px;
+    color: #FF3C00;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-family: AvenirNext-Bold;
+}
+
+.btns-alone .button {
+    width: 100%
+}
+
+.head-card {
+    padding: 10px; 
+    background-color: #4B118E; 
+    margin-top: -15px; 
+    margin-bottom: 10px; 
+    border-radius: 5px 5px 0px 0px;
+}
+
+.bolder-orange {
+    font-weight: bold; 
+    color: #f00;
+}
+
+.margin-head {
+    margin-top: 10px; margin-bottom: 10px;
+}
+
+.card-v .header-holder .p-promo {
+    text-align: center;
+    font-size: 22px;
+    color: #FF3C00;
+    text-transform: none;
+    margin-top: 32px;
+}
+
+.card-v .header-holder .p-promo span {
+    font-family: AvenirNext-Bold;
+    font-size: 23px;
+}
+
+.card-v .header-holder .left h1 {
+    margin: -5px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    font-family: AvenirNext-Medium;
+    color: white;
+}
+
+.progress-bar-holder p {
+    margin: 5px;
+    color: #ff0000!important;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -1160,9 +1225,11 @@ a {
 
 .card-large p {
     margin: 0;
-    font-weight: 600;
     text-align: center;
     color: #4B118E;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: AvenirNext-Bold;
 }
 
 .button-large {
@@ -1209,18 +1276,13 @@ a {
 }
 
 .circle .tittle{
-    font-family: AvenirNext-Bold;
-    font-weight: 900;
     line-height: 100%; 
     margin-top: 8px;
 }
 
 .circle .subtittle{
-    font-family: AvenirNext-Bold;
-    font-weight: 900;
     color: #ff513c; 
     line-height: 200%;
-    margin-top: -3px;
 }
 
 .image-card .subtittle{
@@ -1234,7 +1296,88 @@ a {
     border-color: darkgray;
 }
 
+.subtitulo {
+    margin-top: 0px; 
+    font-family: AvenirNext-Bold;
+}
 
+.btnn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 11px 10px;
+    font-size: 13px;
+    font-family: AvenirNext-Medium;
+    line-height: 1.42857143;
+    border-radius: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.progress-bar-holder p {
+    margin: 5px;
+    color: #4b118e;
+}
+
+.t1{
+    color: white; 
+    font-family: AvenirNext-Bold;
+}
+
+.t2{
+    font-family: AvenirNext-Regular; 
+    margin-top: 20px; 
+    margin-right: 10px; 
+    color: white; 
+    float: right;
+}
+
+.fondeado-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 45px;
+    font-family: AvenirNext-Bold;
+    color: #FF3C00;
+}
+
+.fondeado-subtitle{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 3px;
+    font-weight: 900;
+    font-size: 25px;
+    font-family: AvenirNext-Bold;
+    color: #4B118E;
+}
+
+.card-v .main-card-image .fondeada-layer {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 12, 95, 0.73);
+}
+
+.card-v .main-card-image .fondeada-layer p {
+    margin-top: 35%;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
 
 .btn-custom-3 {
 color: #fff;
@@ -1408,7 +1551,7 @@ box-shadow: inset 0 1px 1px rgba(255,255,255,.4);
     margin-bottom: 17px;
 }
 .btn-pref .btn {
-    -webkit-border-radius:0!important;
+    -webkit-border-radius:0 !important;
 }
 
 .panel-primary {
@@ -1419,115 +1562,12 @@ box-shadow: inset 0 1px 1px rgba(255,255,255,.4);
     line-height: 14px!important;
 }
 
-.titulo-ficha {
-    font-family: AvenirNext-Bold;
-    color: white; 
-    font-weight: 900;
-}
-
-.subtitulo-ficha {
-    font-family: AvenirNext-Regular;
-    color: white; 
-    margin-top: 20px; 
-    float: right; 
-    font-weight: 100;
-}
-
-.subtitulo {
-    margin-top: -3px; 
-    font-family: AvenirNext-Bold;
-}
-
-.subtitulo2 {
-    margin-top: 0px; 
-    margin-bottom: 0px;
-    font-family: AvenirNext-Bold;
-}
-
-.large-counter {
-    margin-top: 0px;
-    margin-bottom: 12px;
-    background-color: #4B118E;
-    border: 1px solid #4B118E;
-    width: 100%;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 20px;
-    font-family: AvenirNext-Bold;
-    color: white;
-}
-.counter {
-    font-family: AvenirNext-Bold;
-    margin-top: 10px; 
-    margin-bottom: 5px;
-    color: #FF3C00;
-}
-
-.counter2 {
-    margin-top: 0px; 
-    margin-bottom: 0px;
-    font-family: AvenirNext-Bold;
-    color: #FF3C00;
-}
-
-
-      .box{
-          width: 100%;
-          height: 100%;
-          opacity: 0.9;
-          position: absolute;                       
-          top: 0px;
-          left: 0px;
-      }
-
-.blue{
-   background: rgba(0, 0, 255, 0.33);
-   z-index: 3;
-}
-
-.imagen { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
-}
-
-.imagen .h2 { 
-   position: absolute; 
-   top: 200px; 
-   left: 0; 
-   width: 100%; 
-}
-
-.imagen .h2 .span { 
-   color: white; 
-   font: bold 24px/45px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
-}
-
-.btn-grande {
-    padding: 13px 13px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.4;
-    border-radius: 0px;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #4b118e!important;
-    border-color: #4b118e!important;
-}
-
 .btn.focus, .btn:focus, .btn:hover {
     color: #fff;
     text-decoration: none;
 }
 
-.button:hover {
-    background-color: #731abf;
-}
+
 
 .big-lead {
    font-size: 40px;

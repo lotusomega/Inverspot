@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="script/inverspot.min.js"></script>
     <script type="text/javascript" src="script/user.js"></script>
     <script type="text/javascript" src="script/npm.js"></script>
+    <style> .card-v .main-card-image {width: 90%;}</style>
     
 </head>
 <body>
@@ -76,17 +77,18 @@
 
         <div class="spacer triple"></div>
         
+        
+        <!-- Slider -->
         <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="6500" id="bs-carousel">
 
           <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#bs-carousel" data-slide-to="1"></li>
-            <li data-target="#bs-carousel" data-slide-to="2"></li>
-          </ol>
+            <ol class="carousel-indicators">
+                <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bs-carousel" data-slide-to="1"></li>
+                <li data-target="#bs-carousel" data-slide-to="2"></li>
+            </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
+            <div class="carousel-inner">
             <div class="item slides active">
               <div class="slide-1"></div>
               <div class="hero">
@@ -142,36 +144,29 @@
           
            <!--Fichas de las Propiedades-->
             <div class="row main-container propiedades">
-                    <div class="spacer double"></div>
-                    <h1><b>Proyectos para Invertir</b></h1>
-                    <div class="spacer triple"></div>
+                <div class="spacer double"></div>
+                <h1><b>Proyectos para Invertir</b></h1>
+                <div class="spacer triple"></div>
 
-                    <!--Fichas-->
-                    <div class="col-v col-xs-12 col-sm-4 col-md-4">
-                        <div class="card-v" style="border-radius: 10px;">
-                            <div class="row header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
-                                <div class="col-xs-12 col-sm-4 col-md-4 left" style="margin-top: 10px; margin-bottom: 10px;">
-                                    <h1 style="color: white; font-weight: 900;">Proyeto de departamento</h1>
+                <!--Fichas 1-->
+                <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                        <div class="card-v fondeada">
+                            <div class="row header-holder head-card">
+                                <div class="col-xs-12 col-sm-4 col-md-4 left margin-head">
+                                    <h1>San Juan 125</h1>
                                 </div>
-                                <div class="col-xs-12 col-sm-8 col-md-8 right" style="margin-top: 10px; margin-bottom: 10px;">
-                                    <h2 class="Doctores" style="font-size: 12px; font-weight: 400; color: white;">Doctores</h2>
+                                <div class="col-xs-12 col-sm-8 col-md-8 right margin-head">
+                                    <p style="font-size: 12px; font-weight: 400; color: white;">Claudio Bernad 24</p>
                                     <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
                                 </div>
                             </div>
-
-
                             <div class="row header-holder" style="margin-top: -20px;">
-                                <div class="investment-holder col-xs-12 col-sm-12 col-md-12">
-                                    <p class="p-promo" style="margin-top: 14px;">Invierte desde <span>$50,000</span> pesos</p>
+                                <div class="col-xs-12 col-sm-12 col-md-12 investment-holder ">
+                                    <p class="p-promo" style="margin-top: 14px;  text-transform: none;">Invierte desde <span>$100,000</span> pesos</p>
                                 </div>
                             </div>
                             <figure class="main-card-image">
-                                <a href="/inmuebles/doctores">
-                                    <img src="http://placehold.it/400">
-                                    <div class="fondeada-layer">
-                                        <p class="Doctores">PROYECTO FONDEADO</p>
-                                    </div>
-                                </a>
+                                <a href="/inmuebles/doctores"><img src="http://placehold.it/400"></a>
                             </figure>
                             <div class="row progress-bar-holder">
                                 <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$650,000</p></div>
@@ -189,17 +184,73 @@
                                 <div class="col col-xs-4 col-sm-4 col-md-4">
                                     <p class="tit">MONTO A INVERTIR</p>
                                     <div class="icon icon-bill"></div>
-                                    <p>$ 4,000<br>mensual</p>
+                                    <p>$150,000</p>
                                 </div>
                                 <div class="col col-xs-4 col-sm-4 col-md-4">
                                     <p class="tit">PLAZO ESTIMADO</p>
                                     <div class="icon icon-calendar"></div>
-                                    <p>12 meses</p>
+                                    <p>22 MESES</p>
                                 </div>
                                 <div class="col col-xs-4 col-sm-4 col-md-4">
                                     <p class="tit">RENDIMIENTO ESTIMADO</p>
                                     <div class="icon icon-coins"></div>
-                                    <p>12%</p>
+                                    <p>46 %</p>
+                                </div>
+                            </div>
+                            <div class="row btns-holder">
+                                <a href="#"><button class="button btn-v-card left">Ver Más</button></a>
+                                <button class="button  btn-v-card right">Invertir</button>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Fichas 2-->
+                <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                        <div class="card-v fondeada">
+                            <div class="row header-holder head-card">
+                                <div class="col-xs-12 col-sm-4 col-md-4 left margin-head">
+                                    <h1>San Juan 125</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8 right margin-head">
+                                    <p style="font-size: 12px; font-weight: 400; color: white;">Claudio Bernad 24</p>
+                                    <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
+                                </div>
+                            </div>
+                            <div class="row header-holder" style="margin-top: -20px;">
+                                <div class="col-xs-12 col-sm-12 col-md-12 investment-holder ">
+                                    <p class="p-promo" style="margin-top: 14px;  text-transform: none;">Invierte desde <span>$100,000</span> pesos</p>
+                                </div>
+                            </div>
+                            <figure class="main-card-image">
+                                <a href="/inmuebles/doctores"><img src="http://placehold.it/400"></a>
+                            </figure>
+                            <div class="row progress-bar-holder">
+                                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$650,000</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">$1,000,000</p></div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
+                                    <div class="range" style="background-color: #4b118e; width:65%"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
+                                    <p style="color: #f00;"><span style="color: #f00;">13</span> Acciones disponibles de <span style="color: #f00;">20</span></p>
+                                </div>
+                                <hr class="hr-card">
+                            </div>
+                            <div class="info-cols-holder ">
+
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">MONTO A INVERTIR</p>
+                                    <div class="icon icon-bill"></div>
+                                    <p>$150,000</p>
+                                </div>
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">PLAZO ESTIMADO</p>
+                                    <div class="icon icon-calendar"></div>
+                                    <p>22 MESES</p>
+                                </div>
+                                <div class="col col-xs-4 col-sm-4 col-md-4">
+                                    <p class="tit">RENDIMIENTO ESTIMADO</p>
+                                    <div class="icon icon-coins"></div>
+                                    <p>46 %</p>
                                 </div>
                             </div>
                             <div class="row btns-holder">
@@ -209,40 +260,34 @@
                         </div>
                     </div>
 
-                    <div class="col-v col-xs-12 col-sm-4 col-md-4">
-                        <div class="card-v" style="border-radius: 10px;">
-                            <div class="row header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
-                                <div class="col-xs-12 col-sm-4 col-md-4 left" style="margin-top: 10px; margin-bottom: 10px;">
-                                    <h1 style="color: white; font-weight: 900;">Proyeto de casa</h1>
+                <!--Fichas 3-->
+                <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                        <div class="card-v fondeada">
+                            <div class="row header-holder head-card">
+                                <div class="col-xs-12 col-sm-4 col-md-4 left margin-head">
+                                    <h1>San Juan 125</h1>
                                 </div>
-                                <div class="col-xs-12 col-sm-8 col-md-8 right" style="margin-top: 10px; margin-bottom: 10px;">
-                                    <h2 class="Prueba inmueble" style="font-size: 12px; font-weight: 400; color: white;">Prueba inmueble</h2>
+                                <div class="col-xs-12 col-sm-8 col-md-8 right margin-head">
+                                    <p style="font-size: 12px; font-weight: 400; color: white;">Claudio Bernad 24</p>
                                     <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
                                 </div>
                             </div>
-
-
                             <div class="row header-holder" style="margin-top: -20px;">
-                                <div class="investment-holder col-xs-12 col-sm-12 col-md-12">
-                                    <p class="p-promo" style="margin-top: 14px;">Invierte desde <span>$200,000</span> pesos</p>
+                                <div class="col-xs-12 col-sm-12 col-md-12 investment-holder ">
+                                    <p class="p-promo" style="margin-top: 14px;  text-transform: none;">Invierte desde <span>$100,000</span> pesos</p>
                                 </div>
                             </div>
                             <figure class="main-card-image">
-                                <a href="/inmuebles/prueba">
-                                    <img src="http://placehold.it/400">
-                                    <div class="fondeada-layer">
-                                        <p class="Prueba inmueble">PROYECTO FONDEADO</p>
-                                    </div>
-                                </a>
+                                <a href="/inmuebles/doctores"><img src="http://placehold.it/400"></a>
                             </figure>
                             <div class="row progress-bar-holder">
-                                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$1,600,000</p></div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">$ 2,000,000</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$650,000</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">$1,000,000</p></div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
-                                    <div class="range" style="background-color: #4b118e; width:80%"></div>
+                                    <div class="range" style="background-color: #4b118e; width:65%"></div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
-                                    <p style="color: #f00;"><span style="color: #f00;">8</span> Acciones disponibles de <span style="color: #f00;">10</span></p>
+                                    <p style="color: #f00;"><span style="color: #f00;">13</span> Acciones disponibles de <span style="color: #f00;">20</span></p>
                                 </div>
                                 <hr class="hr-card">
                             </div>
@@ -251,83 +296,21 @@
                                 <div class="col col-xs-4 col-sm-4 col-md-4">
                                     <p class="tit">MONTO A INVERTIR</p>
                                     <div class="icon icon-bill"></div>
-                                    <p>$1,500<br>mensual</p>
+                                    <p>$150,000</p>
                                 </div>
                                 <div class="col col-xs-4 col-sm-4 col-md-4">
                                     <p class="tit">PLAZO ESTIMADO</p>
                                     <div class="icon icon-calendar"></div>
-                                    <p>18 meses</p>
+                                    <p>22 MESES</p>
                                 </div>
                                 <div class="col col-xs-4 col-sm-4 col-md-4">
                                     <p class="tit">RENDIMIENTO ESTIMADO</p>
                                     <div class="icon icon-coins"></div>
-                                    <p>45% mensual</p>
+                                    <p>46 %</p>
                                 </div>
                             </div>
                             <div class="row btns-holder">
-                                <a href="/inmuebles/prueba"><button class="button btn-v-card left">Ver más</button></a>
-                                <button class="button  btn-v-card right">Invertir</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-v col-xs-12 col-sm-4 col-md-4">
-                        <div class="card-v" style="border-radius: 10px;">
-                            <div class="row header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
-                                <div class="col-xs-12 col-sm-4 col-md-4 left" style="margin-top: 10px; margin-bottom: 10px;">
-                                    <h1 style="color: white; font-weight: 900;">Proyeto de departamento</h1>
-                                </div>
-                                <div class="col-xs-12 col-sm-8 col-md-8 right" style="margin-top: 10px; margin-bottom: 10px;">
-                                    <h2 class="Tlalpan 1439" style="font-size: 12px; font-weight: 400; color: white;">Tlalpan 1439</h2>
-                                    <p style="font-size: 12px; font-weight: 400; color: white;">Col Country Club</p>
-                                </div>
-                            </div>
-
-
-                            <div class="row header-holder" style="margin-top: -20px;">
-                                <div class="investment-holder col-xs-12 col-sm-12 col-md-12">
-                                    <p class="p-promo" style="margin-top: 14px;">Invierte desde <span>$100,000</span> pesos</p>
-                                </div>
-                            </div>
-                            <figure class="main-card-image">
-                                <a href="#">
-                                    <img src="http://placehold.it/400">
-                                    <div class="fondeada-layer">
-                                        <p>PROYECTO FONDEADO</p>
-                                    </div>
-                                </a>
-                            </figure>
-                            <div class="row progress-bar-holder">
-                                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$300,000</p></div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">5000000</p></div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
-                                    <div class="range" style="background-color: #4b118e; width:6%"></div>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
-                                    <p style="color: #f00;"><span style="color: #f00;">3</span> Acciones disponibles de <span style="color: #f00;">50</span></p>
-                                </div>
-                                <hr class="hr-card">
-                            </div>
-                            <div class="info-cols-holder ">
-
-                                <div class="col col-xs-4 col-sm-4 col-md-4">
-                                    <p class="tit">MONTO A INVERTIR</p>
-                                    <div class="icon icon-bill"></div>
-                                    <p>$1,500<br>mensual</p>
-                                </div>
-                                <div class="col col-xs-4 col-sm-4 col-md-4">
-                                    <p class="tit">PLAZO ESTIMADO</p>
-                                    <div class="icon icon-calendar"></div>
-                                    <p>18 meses</p>
-                                </div>
-                                <div class="col col-xs-4 col-sm-4 col-md-4">
-                                    <p class="tit">RENDIMIENTO ESTIMADO</p>
-                                    <div class="icon icon-coins"></div>
-                                    <p>45% mensual</p>
-                                </div>
-                            </div>
-                            <div class="row btns-holder">
-                                <a href="/inmuebles/desarrollo-tlalpan-1439"><button class="button btn-v-card left">Ver más</button></a>
+                                <a href="/inmuebles/doctores"><button class="button btn-v-card left">Ver más</button></a>
                                 <button class="button  btn-v-card right">Invertir</button>
                             </div>
                         </div>
@@ -354,108 +337,219 @@
                    </form>
             </div>
 
-            <div class="spacer double"></div>
+            <div class="spacer triple"></div>
 
             <!--Fichas de las Propiedades Fondeadas-->
             <div class="row main-container propiedades">
-                    <div class="spacer double"></div>
-                    <h1><b>Proyectos Fondeados</b></h1>
-                    <div class="spacer triple"></div>
+                <div class="spacer double"></div>
+                <h1><b>Proyectos Fondeados</b></h1>
+                <div class="spacer triple"></div>
 
-                    <!--Fichas-->
-                    <div class="col-v col-xs-12 col-sm-4 col-md-4">
-                        <div class="card-v fondeada" style="">
-            <div class="row header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
-                <div class="col-xs-12 col-sm-4 col-md-4 left" style="margin-top: 10px; margin-bottom: 10px;">
-                    <h1 style="color: white; font-weight: 900;">Proyeto de oficina</h1>
-                </div>
-                <div class="col-xs-12 col-sm-8 col-md-8 right" style="margin-top: 10px; margin-bottom: 10px;">
-                    <h2 class="Claudio Bernad 24" style="font-size: 12px; font-weight: 400; color: white;">Claudio Bernad 24</h2>
-                    <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
-                </div>
-            </div>
-
-
-            <div class="row header-holder" style="margin-top: -20px;">
-                <div class="investment-holder col-xs-12 col-sm-12 col-md-12">
-                    <p class="p-promo" style="margin-top: 14px;">Invierte desde <span>$200,000</span> pesos</p>
-                </div>
-            </div>
-            <figure class="main-card-image">
-                <a href="/inmuebles/claudio-bernad-24">
-                    <img src="http://placehold.it/400">
-                    <div class="fondeada-layer">
-                        <p class="Claudio Bernad 24">PROYECTO FONDEADO</p>
+                <!--Ficha 1-->
+                <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                    <div class="card-v fondeada">
+                        <div class="row header-holder head-card">
+                            <div class="col-xs-12 col-sm-4 col-md-4 left margin-head">
+                                <h1 style="color: white; font-weight: 900;">San Juan 125</h1>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-8 right margin-head">
+                                <p style="font-size: 12px; font-weight: 400; color: white;">Claudio Bernad 24</p>
+                                <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
+                            </div>
+                        </div>
+                        <div class="row header-holder" style="margin-top: -20px;">
+                            <div style="height: 10px;"></div>
+                        </div>
+                        <figure class="main-card-image">
+                            <a href="#">
+                                <img src="http://placehold.it/400">
+                                <div class="fondeada-layer">
+                                    <p>PROYECTO<br>FONDEADO</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class="row progress-bar-holder">
+                            <div class="col-xs-6 col-sm-6 col-md-6 left"><p class="bolder-orange">$4,400,000</p></div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 right"><p class="bolder-orange">$5,400,000</p></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
+                                <div class="range" style="background-color: #00c4bc; width:100%"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
+                                <p style="color: #f00;"><span style="color: #f00;">0</span> Acciones disponibles de <span style="color: #f00;">15</span></p>
+                            </div>
+                            <hr class="hr-card">
+                        </div>
+                        <div class="info-cols-holder ">
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">MONTO A INVERTIR</p>
+                                <div class="icon icon-bill"></div>
+                                <p>$150,000</p>
+                            </div>
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">PLAZO ESTIMADO</p>
+                                <div class="icon icon-calendar"></div>
+                                <p>22 MESES</p>
+                            </div>
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">RENDIMIENTO ESTIMADO</p>
+                                <div class="icon icon-coins"></div>
+                                <p>46 %</p>
+                            </div>
+                        </div>
+                        <div class="row btns-alone btns-holder">
+                            <a href="#"><button class="button btn-v-card left">Detalles de la Propiedad</button></a>
+                        </div>
                     </div>
-                </a>
-            </figure>
-            <div class="row progress-bar-holder">
-                <div class="col-xs-6 col-sm-6 col-md-6 left"><p style="font-weight: bold; color: #f00;">$3,000,000</p></div>
-                <div class="col-xs-6 col-sm-6 col-md-6 right"><p style="font-weight: bold; color: #f00;">$3,000,000</p></div>
-                <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
-                    <div class="range" style="background-color: #4b118e; width:100%"></div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
-                    <p style="color: #f00;"><span style="color: #f00;">15</span> Acciones disponibles de <span style="color: #f00;">15</span></p>
-                </div>
-                <hr class="hr-card">
-            </div>
-            <div class="info-cols-holder ">
 
-                <div class="col col-xs-4 col-sm-4 col-md-4">
-                    <p class="tit">MONTO A INVERTIR</p>
-                    <div class="icon icon-bill"></div>
-                    <p>$17,000 mensual</p>
+                <!--Ficha 2-->
+                <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                    <div class="card-v fondeada" style="">
+                        <div class="row header-holder head-card">
+                            <div class="col-xs-12 col-sm-4 col-md-4 left margin-head">
+                                <h1 style="color: white; font-weight: 900;">San Juan 125</h1>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-8 right margin-head">
+                                <p style="font-size: 12px; font-weight: 400; color: white;">Claudio Bernad 24</p>
+                                <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
+                            </div>
+                        </div>
+                        <div class="row header-holder" style="margin-top: -20px;">
+                            <div style="height: 10px;"></div>
+                        </div>
+                        <figure class="main-card-image">
+                            <a href="#">
+                                <img src="http://placehold.it/400">
+                                <div class="fondeada-layer">
+                                    <p>PROYECTO<br>FONDEADO</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class="row progress-bar-holder">
+                            <div class="col-xs-6 col-sm-6 col-md-6 left"><p class="bolder-orange">$4,400,000</p></div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 right"><p class="bolder-orange">$5,400,000</p></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
+                                <div class="range" style="background-color: #00c4bc; width:100%"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
+                                <p style="color: #f00;"><span style="color: #f00;">0</span> Acciones disponibles de <span style="color: #f00;">15</span></p>
+                            </div>
+                            <hr class="hr-card">
+                        </div>
+                        <div class="info-cols-holder ">
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">MONTO A INVERTIR</p>
+                                <div class="icon icon-bill"></div>
+                                <p>$150,000</p>
+                            </div>
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">PLAZO ESTIMADO</p>
+                                <div class="icon icon-calendar"></div>
+                                <p>22 MESES</p>
+                            </div>
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">RENDIMIENTO ESTIMADO</p>
+                                <div class="icon icon-coins"></div>
+                                <p>46 %</p>
+                            </div>
+                        </div>
+                        <div class="row btns-alone btns-holder">
+                            <a href="#"><button class="button btn-v-card left">Detalles de la Propiedad</button></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col col-xs-4 col-sm-4 col-md-4">
-                    <p class="tit">PLAZO ESTIMADO</p>
-                    <div class="icon icon-calendar"></div>
-                    <p>12 meses</p>
+
+                <!--Ficha 3-->
+                <div class="col-v col-xs-12 col-sm-4 col-md-4">
+                    <div class="card-v fondeada" style="">
+                        <div class="row header-holder head-card">
+                            <div class="col-xs-12 col-sm-4 col-md-4 left margin-head">
+                                <h1 style="color: white; font-weight: 900;">San Juan 125</h1>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-8 right margin-head">
+                                <p style="font-size: 12px; font-weight: 400; color: white;">Claudio Bernad 24</p>
+                                <p style="font-size: 12px; font-weight: 400; color: white;">Col Doctores</p>
+                            </div>
+                        </div>
+                        <div class="row header-holder" style="margin-top: -20px;">
+                            <div style="height: 10px;"></div>
+                        </div>
+                        <figure class="main-card-image">
+                            <a href="#">
+                                <img src="http://placehold.it/400">
+                                <div class="fondeada-layer">
+                                    <p>PROYECTO<br>FONDEADO</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class="row progress-bar-holder">
+                            <div class="col-xs-6 col-sm-6 col-md-6 left"><p class="bolder-orange">$4,400,000</p></div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 right"><p class="bolder-orange">$5,400,000</p></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 range-holder">
+                                <div class="range" style="background-color: #00c4bc; width:100%"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 range-txt">
+                                <p style="color: #f00;"><span style="color: #f00;">0</span> Acciones disponibles de <span style="color: #f00;">15</span></p>
+                            </div>
+                            <hr class="hr-card">
+                        </div>
+                        <div class="info-cols-holder ">
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">MONTO A INVERTIR</p>
+                                <div class="icon icon-bill"></div>
+                                <p>$150,000</p>
+                            </div>
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">PLAZO ESTIMADO</p>
+                                <div class="icon icon-calendar"></div>
+                                <p>22 MESES</p>
+                            </div>
+                            <div class="col col-xs-4 col-sm-4 col-md-4">
+                                <p class="tit">RENDIMIENTO ESTIMADO</p>
+                                <div class="icon icon-coins"></div>
+                                <p>46 %</p>
+                            </div>
+                        </div>
+                        <div class="row btns-alone btns-holder">
+                            <a href="#"><button class="button btn-v-card left">Detalles de la Propiedad</button></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col col-xs-4 col-sm-4 col-md-4">
-                    <p class="tit">RENDIMIENTO ESTIMADO</p>
-                    <div class="icon icon-coins"></div>
-                    <p>46% a<br>22 meses</p>
-                </div>
+                   
             </div>
-            <div class="row btns-holder">
-                <a href="/inmuebles/claudio-bernad-24"><button class="button btn-v-card left">Ver más</button></a>
-                <button class="button  btn-v-card right">Invertir</button>
-            </div>
+
         </div>
-                    </div>
-                    
-            </div>
-            
-            <div class="spacer triple"></div>
-            
-            <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-centered">
-                        <div class="box-banner">							
-                            <div>
-                                <img src="style/images/sellspot.png" class="img-fluid" style="float: left; width: 250px;" alt="Responsive image">
-                                <div class="col-xs-12">
-                                    <h2 style="font-size: 26px; text-align: left;">Promueve propiedades y gana<br>comisiones</h2>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
 
-                    <div class="col-xs-12 col-sm-6 col-centered">
-                        <div class="box-banner">							
-                            <div>
-                                <img src="style/images/premiumspot.png" class="img-fluid" style="float: right; width: 370px;" alt="Responsive image">
-                                <div  class="col-xs-12">
-                                    <h2 style="font-size: 26px; text-align: right;">Buscas inversiones superiores<br>a <b>$500,000</b></h2>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>	        	    	    
+        <div class="spacer triple"></div>
+            
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 col-centered">
+                <div class="box-banner">							
+                    <div>
+                        <img src="style/images/sellspot.png" class="img-fluid" style="float: left; width: 250px;" alt="Responsive image">
+                        <div class="col-xs-12">
+                            <h2 style="font-size: 26px; text-align: left;">Promueve propiedades y gana<br>comisiones</h2>
+                        </div>
+                    </div>
+                </div> 
             </div>
+
+            <div class="col-xs-12 col-sm-6 col-centered">
+                <div class="box-banner">							
+                    <div>
+                        <img src="style/images/premiumspot.png" class="img-fluid" style="float: right; width: 370px;" alt="Responsive image">
+                        <div  class="col-xs-12">
+                            <h2 style="font-size: 26px; text-align: right;">Buscas inversiones superiores<br>a <b>$500,000</b></h2>
+                        </div>
+                    </div>
+                </div> 
+            </div>	        	    	    
+        </div>
             
-            <div class="spacer triple"></div>
+        <div class="spacer triple"></div>
             
-            <!--Incribirse-->
+        <!--Suscribe-->
+        <div class="container">
             <div class="row jumbotron main-container registro-section">
                 <div class="spacer"></div>
                 <h2>Invertir con nosotros es rápido, seguro y sencillo</h2>
@@ -463,130 +557,25 @@
                 <p>Con el objetivo de democratizar la inversión en el sector inmobiliario, hemos diseñado un método sencillo para la selección de inmueble ideal. Invertir nunca fue más sencillo.</p>
                 <button class="button" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Comenzar registro</button>
             </div>
-            
-            <div class="spacer triple"></div>
-            
-            <!--Slider ellos hablan-->
-            <div class="row">
-                <div class="col-xs-1 col-md-3 col-lg-12">
-
-                    <div class="row main-container hidden-xs">
-                        <div class="spacer double"></div>
-                        <h1><b>Ellos Hablan de Nosotros</b></h1>
-                        <div class="spacer double"></div>
-                    </div> 
-                    <div class="carousel slide hidden-xs" id="myCarousel">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                    <ul class="thumbnails">
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="http://expansion.mx/emprendedores/2016/08/10/mexicano-crea-inverspot-una-nueva-opcion-para-invertir-en-bienes-raices">
-                                                    <img src="style/images/logos/expansion.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="https://es-us.noticias.yahoo.com/plataformas-fondeo-colectivo-reguladas-motor-crecimiento-135131032--finance.html">
-                                                    <img src="style/images/logos/ntx.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="#tecnoempresa"><img src="style/images/logos/tecnoempresa.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="http://mundoejecutivo.com.mx/pymes/2016/07/06/crowdfunding-alto-potencial-economico-mexico"><img src="style/images/logos/mundo-ejecutivo.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                              </div><!-- /Slide1 --> 
-                            <div class="item">
-                                    <ul class="thumbnails">
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="http://www.revistaneodigital.com/articles/2016/07/08/inverspot-para-inversiones-inmobiliarias"><img src="style/images/logos/ned.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="http://ebusinesshoy.com/inverspot-cualquiera-puede-volverse-inversionista/"><img src="style/images/logos/ebussineshoy.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="http://www.sinembargo.mx/21-08-2016/3082279">
-                                                    <img src="style/images/logos/sinembargo.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="http://expansion.mx/emprendedores/2016/08/10/mexicano-crea-inverspot-una-nueva-opcion-para-invertir-en-bienes-raices">
-                                                    <img src="style/images/logos/expansion.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                              </div><!-- /Slide2 --> 
-                            <div class="item">
-                                    <ul class="thumbnails">
-                                        <li class="col-sm-3">	
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="#wradio"><img src="style/images/logos/w.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="http://www.imagenradio.com.mx/rodrigo-pacheco/inverspot-proyecto-de-inversion-inmobiliaria-online"><img src="style/images/logos/imagen.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="http://eleconomista.com.mx/fondos/2016/07/06/plataformas-fondeo-colectivo-reguladas-motor-crecimiento"><img src="style/images/logos/eleconomista.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="col-sm-3">
-                                            <div class="fff">
-                                                <div class="thumbnail">
-                                                    <a href="#milenio"><img src="style/images/logos/milenio.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                              </div><!-- /Slide3 --> 
-                        </div>
-                   </div>
-                </div> 
-            </div> 
-            
-            
         </div>
 
+        <div class="spacer triple"></div>
 
-       <!--Footer-->
+        <!--Slider ellos hablan-->
+        <div class="conteiner">
+           <div class="row">
+              <div class="col-xs-12 col-centered">
+                   <div class="spacer double"></div>
+                    <h1 class="text-center"><b>Ellos Hablan de Nosotros</b></h1>
+                    <div class="spacer double"></div>
+              </div>
+            </div>
+        </div>
+        <!--slider ellos hablan-->   
+            
+        <div class="spacer triple"></div>
+
+        <!--Enlaces-->
         <section>
            <!--Divider-->
             <div class="container">
@@ -640,14 +629,16 @@
                 </div>
             </footer>
         </section>
-        
+        <!--enlaces-->
+       
         <div class="spacer"></div>
-                
-	    <div class="end-bar">©2017 inverspot.mx | All Rights reserved</div>
+        
+        <!--Footer-->
+	    <footer class="end-bar">©2017 inverspot.mx | All Rights reserved</footer>
+        <!--footer-->
 
-
-       <!--Modal de Registro y de Ingreso-->
-		 <div class="modal fade login" id="loginModal">
+        <!--Modal de Registro y de Ingreso-->
+        <div class="modal fade login" id="loginModal">
 		      <div class="modal-dialog login animated">
                    
                     <!--Cabecera del Modal-->
@@ -819,50 +810,39 @@
     		      </div>
 		      </div>
 		  </div>
+        <!--modal de Registro y de Ingreso-->
 
 
-       
-        <!--script-->
-        <script>
-          $(document).ready(function() {
-            $('.carousel').carousel({
-              interval: 3000
-            })
-          });
-        </script>
-        <script>
-        $(function(){
-            $('#show').on('click',function(){        
-                $('.card-reveal').slideToggle('slow');
-            });
 
-            $('.card-reveal .close').on('click',function(){
-                $('.card-reveal').slideToggle('slow');
-            });
-        });
-        </script>
-        <script>
-        $(document).ready(function() {
-        $(".btn-pref .btn").click(function () {
-            $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
-            // $(".tab").addClass("active"); // instead of this do the below 
-            $(this).removeClass("btn-default").addClass("btn-primary");   
-        });
-        });
-        </script>
-        <script>
-            $(document).ready(function() {
-                $('.fancybox').fancybox({
-                    padding : 0,
-                    openEffect  : 'elastic',
-                    closeBtn: false
-                });
-            });
-        </script>
-        <script>
-            $('.carousel').carousel();
-        </script>
-        
-        
+
+<script>
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 3000
+    })
+  });
+</script>
+<script>
+$(function(){
+    $('#show').on('click',function(){        
+        $('.card-reveal').slideToggle('slow');
+    });
+    
+    $('.card-reveal .close').on('click',function(){
+        $('.card-reveal').slideToggle('slow');
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+$(".btn-pref .btn").click(function () {
+    $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+    // $(".tab").addClass("active"); // instead of this do the below 
+    $(this).removeClass("btn-default").addClass("btn-primary");   
+});
+});
+</script>
+
+
 </body >
 </html >
