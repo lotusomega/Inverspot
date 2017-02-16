@@ -1231,23 +1231,27 @@
 
 
 
-
-
-		 <div class="modal fade login" id="loginModal">
+        <!--Modal de Registro y de Ingreso-->
+        <div class="modal fade login" id="loginModal">
 		      <div class="modal-dialog login animated">
+                   
+                    <!--Cabecera del Modal-->
     		      <div class="modal-content">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    		        <div class="modal-header header-holder" style="padding: 10px; background-color: #4B118E; margin-top: -15px; margin-bottom: 10px; border-radius: 10px 10px 0px 0px;">
-					<div class="modal-tit" style="font-family: AvenirNext-Regular; text-color: white; margin-left: 20px;">Bienvenido a</div>
-					<img src="/style/images/inverspot.png" class="img-fluid" style="margin: -10px 0px 0px 25px; float: left; width: 220px;" alt="Responsive image">
+    		        <div class="modal-header header-holder">
+					<div class="modal-tit" style="">Bienvenido a</div>
+					<img src="style/images/inverspot.png" class="img-fluid-login" alt="Responsive image">
                     <br><br>
                     </div>
+                    
+                    <!--Modal de Login-->
                     <div class="modal-body">  
-                        <div class="box" style="margin-top: 0px;">
+                        <div class="box">
                                 <div class="content registerBox" style="display:none;">
                                      <div class="form">
-                                        <h1 style="font-size: 24px; color: #4B118E; font-family: AvenirNext-Regular; font-weight: 900; text-align: left;">Regístrate <small style="color: #4B118E;"> Ingresa tus datos</small></h1>
-                                        <hr style="border-top: 1px solid #4B118E;">
+                                        <h1>Regístrate <small style="color: #4B118E;"> Ingresa tus datos</small></h1>
+                                        
+                                        <hr>
 
                                         <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8" data-toggle="validator" role="form">
 
@@ -1331,7 +1335,7 @@
                                             
                                             <div class="input-group" style="float: left; margin-left: 10px;">
                                               <div class="checkbox">
-                                                  <label style="font-size: 11px;">
+                                                  <label style="font-size: 12px;">
                                                       <input id="login-remember" type="checkbox" name="remember" value="1"> Acepto avisos de política y privacidad             
                                                   </label>
                                               </div>
@@ -1340,10 +1344,10 @@
                                         <div class="container-fluid">
                                           <div class="row">
                                             <div class="col-sm-6">
-                                                <button class="loginBtn loginBtn--facebook">Login with Facebook</button>
+                                                <button class="loginBtn loginBtn--facebook">Sing in with Facebook</button>
                                             </div>
                                             <div class="col-sm-6">
-                                                <input class="button btn-register" type="submit" value="Enviar" name="commit">
+                                                <input class="button btn-register" style="margin-left: 10px; padding: 15px 0px;" type="submit" value="Enviar" name="commit">
                                             </div>
                                           </div>
                                         </div> 
@@ -1354,53 +1358,168 @@
                         </div>
                     </div>
                     
+                    <!--Modal de Login-->
                     <div class="modal-body">  
-                        <div class="box" style="margin-top: 0px;">
-                             <div class="content">
-                                <div class="form loginBox">
-                                    <h1 style="font-size: 24px; color: #4B118E; font-family: AvenirNext-Regular; font-weight: 900; text-align: left;">Iniciar sesión</h1>
-                                    <hr style="border-top: 1px solid #4B118E;">
-                                    <div class="error"></div>
-                                    <form method="post" action="/login" accept-charset="UTF-8">                    
-                                    <input id="email" class="form-control" type="text" placeholder="Usuario o correo electrónico" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Contraseña" name="password">
-                                    <div class="input-group" style="float: left; margin-left: 10px;">
-                                      <div class="checkbox">
-                                          <label style="font-size: 13px;">
-                                              <input id="login-remember" type="checkbox" name="remember" value="1"> No cerrar sesión              
-                                          </label>
-                                      </div>
-                                    </div>
-                                    <div class="control" style="float: right; margin-top: -10px; margin-right: 10px;">
-                                        <div style="padding-top:15px;">
-                                        <a style="font-size: 12px;" href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
-                                            ¿Olvide mi contraseña?
-                                        </a>
+                        <div class="box">
+                                 <div class="content">
+                                        <div class="form loginBox">
+                                            <h1 style="">Iniciar sesión</h1>
+
+                                            <hr>
+
+                                            <div class="error"></div>
+                                            <form method="post" action="/login" accept-charset="UTF-8">                    
+                                            <input id="email" class="form-control" type="text" placeholder="Usuario o correo electrónico" name="email">
+                                            <input id="password" class="form-control" type="password" placeholder="Contraseña" name="password">
+                                            <div class="input-group" style="float: left; margin-left: 10px;">
+                                              <div class="checkbox">
+                                                  <label style="font-size: 13px;">
+                                                      <input id="login-remember" type="checkbox" name="remember" value="1"> No cerrar sesión              
+                                                  </label>
+                                              </div>
+                                            </div>
+                                            <div class="control control-login" style="margin-top: 8px;">
+                                                <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                                    ¿Olvide mi contraseña?
+                                                </a>
+                                            </div>
+                                            <br>
+                                            <input class="button btn-login" type="button" value="Enviar" onclick="loginAjax()">
+                                            <hr>
+                                            <a class="btn btn-block btn-social btn-facebook">
+                                                <i class="fa fa-facebook"></i> Login with Facebook
+                                            </a><br>
+
+
+                                            </form>
                                         </div>
-                                    </div>
-                                    <input class="button btn-login" type="button" value="Enviar" onclick="loginAjax()">
-                                    </form>
-                                </div>
-                             </div>
+                                 </div>
                         </div>
                     </div>
-
-                    <div class="modal-footer" style="margin-top: -25px;">
+                    
+                    <!--Footer del Modal-->
+                    <div class="modal-footer">
                         <div class="forgot login-footer">                        
                             <span>¿No tienes una cuenta?
-                                 <a href="javascript: showRegisterForm();">Registrate con Nosotros</a></span>
+                                 <a href="javascript: showRegisterForm();" style="font-size: 14px;">Registrate con Nosotros</a></span>
                         </div>
-                        <div class="forgot register-footer" style="margin-top:-25px; margin-bottom:-15px; display:none">
+                        <div class="forgot register-footer">
                              <span>Ya tengo mi cuenta</span>
-                             <a href="javascript: showLoginForm();">Ingresa</a>
+                             <a href="javascript: showLoginForm();" style="font-size: 14px;">Ingresa</a>
                         </div>
                     </div>        
     		      </div>
 		      </div>
 		  </div>
+        <!--modal de Registro y de Ingreso-->
+
+        <!--Modal de Recuperación de Contraseña-->
+        <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content" style="width: 100%; background-color: #4B118E;">
+              <div class="modal-header" style="border-bottom: 1px solid #4b118e;">
+
+              </div>
+              <div class="modal-body">
+                  <div class="col-sm-12">
+                        <img class="img-responsive center-block" src="style/images/inverspot.png"/>
+                        <div class="spacer"></div>
+                        <p class="text-center text-modal">Recuperación de contraseña</p>
+                        <br>
+                        <p class="text-center" style="font-size: 16px; font:weight: 900; color: white;">Escríbe el correo electrónico con el que te has registrado</p>
+                  </div>
+                  <div class="col-md-12">
+                        <div class="panel panel-default" style="background-color: #4B118E;">
+                            <div class="panel-body" style="background-color: #4B118E;">
+                            <fieldset style="border: 1px solid #4b118e;">
+                                <div class="col-sm-8 form-group">
+                                    <input class="form-control input-lg" name="email" type="email" style="margin-top: 10px; font-family: AvenirNext-Bold; font-size: 20px; color: #4b118e; padding-left: 30px;">
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="button large-invertion" style="margin-top: 10px;" data-toggle="modal" data-target="#invertir-modal2" class="close" data-dismiss="modal">Enviar</button>
+                                </div>
+                            </fieldset>
+                            </div>
+                        </div>
+                        <p class="text-center" style="font-size: 16px; font:weight: 900; color: white;">En caso de no recordar tu correo por favor<br>comunicate con nosotros y un asesor te atenderá.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!--modal de Recuperación de Contraseña-->        
+
+       
+       
+        <!--Modal de Inversión 1-->
+        <div class="modal fade" id="invertir-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+                    <div class="col-sm-12">
+                        <img class="img-responsive center-block" src="style/images/inverspot.png"/>
+                        <div class="spacer"></div>
+                        <p class="text-center text-modal">Quiero invertir en esta propiedad</p>
+                        <div class="col-sm-12">
+                            <button class="button large-invertion" style="margin-top: 2px;" data-toggle="modal" data-target="#invertir-modal2" class="close" data-dismiss="modal">Invertir</button>
+                        </div>
+                        <p class="text-center text-modal">Si tienes dudas, contáctanos</p>
+                        <p class="text-center" style="font-size: 12px; color: white;">*Si no cuentas con el 100% del pago<br>inicial te podemos financiar</p>
+                    </div>
+				</div>
+			</div>
+		 </div>
+        <!--modal de Inversión 1-->
 
 
+        <!--Modal de Inversión 2-->
+        <div class="modal fade" id="invertir-modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+                    <div class="col-sm-12">
+                        <img class="img-responsive center-block" src="style/images/inverspot.png"/>
+                        <div class="spacer"></div>
+                        <p class="text-center text-modal">Número de acciones</p>
+                        <div class="text-center counter" id="handleCounter">
+                            <button class="counter-minus buttoncounter">-</button>
+                            <input type="text" value="1" style="height: 34px; font-size: 16px; font-weight: 900; color: #4B118E; text-align: center; width: 50px;">
+                            <button class="counter-plus buttoncounter">+</button>
+                        </div>
+                        <p class="text-center text-modal">Monto:</p>
+                        <div class="text-center counter" id="handleCounter">
+                            <input type="text" value="$ 300,000" style="height: 34px; width: 200px; color: #4b118e; font-weight: 900; text-align: center;">
+                        </div><br>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="button large-invertion" style="margin-top: 2px;"  data-toggle="modal" data-target="#invertir-modal3" class="close" data-dismiss="modal">Invertir</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="button large-confirm" style="margin-top: 2px;" class="close" data-dismiss="modal">Regresar</button>
+                    </div>
+				</div>
+			</div>
+		 </div>
+        <!--modal de Inversión 2-->
 
+
+        <!--Modal de Inversión 3-->
+        <div class="modal fade" id="invertir-modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+                    <div class="col-sm-12">
+                        <img class="img-responsive center-block" src="style/images/inverspot.png"/>
+                        <div class="spacer"></div>
+                        <p class="text-center text-modal">¿Estás seguro que deseas invertir en ésta propiedad?</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="button large-invertion" style="margin-top: 2px;">Si</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="button large-confirm" style="margin-top: 2px;" class="close" data-dismiss="modal">No</button>
+                    </div>
+				</div>
+			</div>
+		 </div>
+        <!--modal de Inversión 3-->
 
 
 
