@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Inverspot | Tu punto de inversión inmobiliario</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="icon" type="images/png" href="style/images/favicon.png"/>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TLGP452');</script>
+    <!-- End Google Tag Manager -->
+    
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="style/font-awesome/css/font-awesome.min.css">	
+	<link rel="stylesheet" type="text/css" href="style/inverspot.min.css">
+	<link rel="stylesheet" type="text/css" href="style/master.css">
+	<link rel="stylesheet" type="text/css" href="style/master.css">
+	<link rel="stylesheet" type="text/css" href="style/login-register.css"/>
+	<link rel="stylesheet" type="text/css" href="style/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap-theme.min.css">
+    
+    <script type="text/javascript" src="script/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+	<script type="text/javascript" src="script/login-register.js"></script>
+	<script type="text/javascript" src="script/inverspot.min.js"></script>
+    <script type="text/javascript" src="script/user.js"></script>
+    <script type="text/javascript" src="script/npm.js"></script>
+    <style> .panel-body{color: #000}</style>
+    
+</head>
+<body>
+
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLGP452"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+       
+          
+        <nav class="navbar navbar-light bg-faded navbar-fixed-top" style="background-color: #fff;">
+         
+          <div class="hidden-xs hidden-sm col-xs-12 col-lg-12" style="background-color: #4B118E; width=100%; height: 29px;">
+            <p style="padding: 5px; margin-left: 100px; font-size: 12px; color: white;">
+            Atención al cliente | 01 (55) 8000 6555 | 
+            <a style="color: #ffffff; text-decoration: none;" href="mailto:hola@inverspot.mx">hola@inverspot.mx</a>
+
+            <a style="float:right; margin-right: 100px; margin-left: 10px; color: white;" href="https://vimeo.com/190621870" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+
+            <a style="float:right; margin-left: 10px;  color: white;" href="https://www.youtube.com/channel/UCvr85MwH36lbTAvOdmeDtxg" target="_blank">
+            <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            
+            <a style="float:right; margin-left: 10px;  color: white;" href="https://twitter.com/Inverspot2017" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            
+            <a style="float:right; margin-left: 10px;  color: white;" href="https://www.facebook.com/inverspot" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            
+            </p>
+          </div>
+          
+          <div class="navbar-header top-logo-holder">
+            <a href="index.html"><div class="icon-logo-main"></div></a>
+            <p>Tu punto de inversión inmobiliario</p>
+            <button style="background-color: #4b118e;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+          
+          
+          <div class="navbar-collapse collapse top-tittle-holder">
+            <ul class="nav navbar-nav" style="margin: 9px -15px!important;">  
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+              <li><a href="como-funciona.html">Como Funciona</a></li>
+              <li><a href="garantia.html">Garantia</a></li>
+              <li><a href="faqs.html">FAQ's</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li id='reg'><a data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Regístro</a></li>
+              <li id='acc'><a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Inicio de Sesión</a></li>
+              
+                <!--Menu desplegable de Usuario Registrado-->
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bienvenido
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Mi Perfil</a></li>
+                  <li><a href="#">Mis Inversiones</a></li>
+                  <li><a href="#">Salir</a></li>
+                </ul>
+              </li> 
+            </ul>
+          </div>
+        </nav>
+
+
+       
+        <div class="container">
+            <div class="row propiedades">
+                <div class="headspace"></div>
+               
+                <div class="spacer double"></div>
+                <h1 class="text-center"><b>FAQ's</b></h1>
+                <div class="spacer double"></div>
+
+                <div class="container">
+                  <div class="row">
+                        <div class="container col-xs-12 col-lg-6">
+                            <div class="panel-group" id="faqAccordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                            ¿QUÉ TIPOS DE PROYECTOS MANEJA INVERSPOT?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Todos los proyectos que Inverspot tiene en su plataforma tienen como finalidad el invertir con el respaldo de una propiedad, lo que hace una inversión muy segura y con atractivos rendimientos e incrementos en la plusvalía de la misma.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                            ¿QUE ES PLUSVALÍA?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Es el resultado del aumento de valor de un inmueble en función a la demanda que este obtiene, de los contratos de renta que obtenga y principalmente depende de un  tiempo transcurrido.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                            ¿CÓMO ESCOGE INVERSPOT LOS INMUEBLES?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Nos basamos principalmente en 4 cosas:</p>
+                                            <p>1.- La zona en la que está</p>
+                                            <p>2.- El precio de costo y el precio al que se vende el proyecto</p>
+                                            <p>3.- La estructura legal de proyecto</p>
+                                            <p>4.- El historial y experiencia del Desarollador</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                            ¿NO ME LLEGO MI CORREO DE CONFIRMACIÓN?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>El correo de confirmación puede llegar a tu bandeja de spam o correos no deseados, esto se debe al tipo de configuración de tu e-mail. Si no lo encuentras en una de las carpetas antes indicadas, escríbenos un correo a hola@inverspot.mx.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                            ¿EN CASO DE QUE SEA UN DESARROLLO, COMO SE AMPARA MI INVERSIÓN?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Inverspot firma con los desarrolladores la participación en la que entrara al proyecto y con los inversionistas la parte en la que estos decidieron entrar. Tu inversión está amparada bajo contratos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                            ¿SE PUEDE VER EL INMUEBLE?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Por supuesto, tendrás la dirección de tu propiedad y puedes cerciorarte de que existe no solo en documentación sino en físico.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                            ¿QUE OTRAS GARANTÍAS OBTENGO APARTE DE LA PROPIEDAD?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Garantizamos la devolución de tu inversión a valor costo (solamente capital invertido) cuando lo desees, con 5 días de anticipación.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                                            ¿CUANDO RECIBIO MI UTILIDAD?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Una vez que el proyecto concluya y se venda se repartirá el capital más la utilidad que este haya generado. Si se va vendiendo el proyecto en el transcurso de la obra, dejaremos de aportar capital y muy  probablemente recuperaremos nuestro capital y la utilidad anticipada</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                                            ¿QUE SEGURIDAD HAY DE REALMENTE RECIBIR LOS RENDIMIENTOS QUE OFRECEN? </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse9" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Somos conservadores al momento de analizar un proyecto y estimar los ingresos que se tendrán, sin embargo, puede que el proyecto de construcción se alargue y los rendimientos se vean afectados.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                                            ¿DÓNDE ES MEJOR INVERTIR? </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse10" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Nosotros recomendamos diversificar lo más que se pueda, recomendamos que cheques que opción se acomoda más a tus posibilidades.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                                            ¿USTEDES TIENEN UNA GARANTÍA SOBRE LOS PROYECTOS?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse11" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Claro, como nosotros les garantizamos el capital a los inversionistas, somos los primeros interesados en tener un respaldo legal sobre cada proyecto que subimos a la plataforma.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                                            ¿EN QUÉ CASOS INVERSPOT NO ASEGURA EL CAPITAL?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse12" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Si existen guerras en el país, temblores o situaciones donde todos los proyectos de Inverspot se vean afectados, no podremos garantizar la devolución del capital, no obstante, la tierra y el proyecto seguirá tendiendo un valor el cual respalda su inversión.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                                            SI QUISIERA CONOCERLOS PARA SABER DONDE ESTOY INVIRTIENDO<br>¿CÓMO LE PUEDO HACER?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse13" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Con gusto puedes agendar una cita en el corporativo donde te mostraremos la estructura legal que manejamos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>  
+
+                        <div class="container col-xs-12 col-lg-6">
+
+                            <div class="panel-group" id="faqAccordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                                            ¿QUE PASA SI LA PROPIEDAD TIENE ALGÚN PROBLEMA LEGAL?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse14" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Previa a la compra del inmueble se checa toda la situación legal del inmueble, sin embargo se pueden presentar casos fortuitos que Inverspot atendería absorbiendo los costos con el fin de salvaguardar siempre el patrimonio de los socios.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+                                            ¿SE PAGA ALGÚN TIPO DE COMISIÓN O IMPUESTOS?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse15" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Las comisiones ya vienen contempladas en el monto total a invertir. Una vez que hagamos la devolución del capital se hará una retención del 20% de impuestos sobre la utilidad⁠⁠⁠⁠.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse16">
+                                            ¿QUE PASA SI NO SE LOGRA CONCRETAR EL GRUPO AL QUE INVERTÍ?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse16" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>En caso de que no se concrete la conformación del grupo, Inverspot realizará los pagos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse17">
+                                            ¿COMO PUEDO VENDER MI PARTICIPACIÓN?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse17" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>En caso de que te quieras salir del proyecto antes que se concluya o se venda, podrás conseguir por tu lado a algún comprador o nosotros te devolvemos tu capital.</p>
+                                            <p>Próximamente tendremos un espacio para que revendas tu participación.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse18">
+                                            ¿COMO ES LA FORMA DE PAGO AL RETIRAR MIS PARTICIPACIONES?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse18" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Se devuelve el capital integro más la plusvalía que se haya generado a la fecha de venta. Se hace la retención de dicha plusvalía por concepto de ISR y se te entrega una constancia.</p>
+
+                                            <p>Para más información, favor de concretar una cita y se les explicara mas a detalle.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse19">
+                                            ¿QUE PUEDO HACER CON MI PARTICIPACIÓN A PARTE DE VENDERLA?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse19" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Puedes empeñarla para obtener liquidez inmediata, donarla, regalarla, dejarla en garantía o simplemente ir acumulándolas, en cualquiera de los primeros casos, deberás notificarnos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse20">
+                                            ¿QUE PASA EN CASO DE FALLECIMIENTO?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse20" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Bajo contrato hay un beneficiario qué pasaría a ser titular el cual podrá decidir si decide con la inversión o prefiere recuperar el capital.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse21">
+                                            ¿ES POSIBLE INVERTIR DESDE OTRO PAÍS?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse21" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Si, es posible invertir desde otro país. Para ello pedimos que se contacten vía email para poder apoyarlos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse22">
+                                            ¿PUEDO REVISAR LOS CONTRATOS QUE AMPARAN MI INVERSIÓN?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse22" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Por supuesto, solicita a hola@inverspot.mx que te envíen los contratos para tu revisión.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse23">
+                                            ¿CUANTO TIEMPO LLEVAN EN EL MERCADO?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse23" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Como plataforma tecnológica llevamos desde febrero del 2016. Sin embargo, los socios de Inverspot llevamos más de 6 años en el sector financiero e invirtiendo en inmuebles.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse24">
+                                            ¿QUE RIESGOS TENGO AL INVERTIR EN INMUEBLES?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse24" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Existen factores variables como el tiempo que Inverspot no puede controlar, es decir, si los proyectos se tardan en vender o la obra se atrasa, es un riesgo que corre el inversionista. Igualmente el rendimiento es una variable que puede mejorar por la plusvalía en la zona o empeorar según el precio al que se venda el inmueble si hay mucha oferta en la zona.</p>
+                                            <p>En cuanto al capital, Inverspot lo asegura.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse25">
+                                            ¿INVERSPOT ESTA REGULADO?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse25" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>No existe una regulación sobre el fondeo colectivo en México como lo hay en USA o Inglaterra, sin embargo, el inversionista tiene el respaldo de su capital en desarrollos inmobiliarios sólidos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer triple"></div>
+
+
+        <!--Enlaces-->
+        <section>
+           <!--Divider-->
+            <div class="container">
+            <div class="row">
+                <div class="divider col-xs-3 col-sm-3 col-lg-12">
+                </div>
+            </div>
+        </div>
+           
+           <!--Accesos directos-->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <div class="icon-logo-main"></div>
+                            <p class="logop">Tu punto de inversión inmubiliario</p>
+                                <ul>
+                                    <li><p>Avenida de las Palmas 1320<br> Lomas de Chapultepec, CDMX</p></li>
+                                    <li><p><a href="tel:015580006555"></a>01 (55) 8000 6555</p></li>
+                                    <li><p><a href="mailto:hola@inverspot.mx">hola@inverspot.mx</a></p></li>
+                                </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <h2><b>Recursos</b></h2>
+                            <ul>
+                                <li><a href="politicas-de-privacidad.html">Políticas de privacidad</a></li>
+                                <li><a href="#">Brochure informativo</a></li>
+                                <li><a href="#">¿Cómo invertir?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <h2><b>Soporte</b></h2>
+                            <ul>
+                                <li><a href="#">Ayuda</a></li>
+                                <li><a href="#">Informe</a></li>
+                                <li><a href="#">Desarrolladores</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <h2><b>Inverspot.mx</b></h2>
+                            <ul>
+                                <li><a href="solicitud-de-inversion.html">Solicitud de Inversión</a>
+                                </li><li><a href="faqs.html">FAQ's</a></li>
+                                <li><a href="aviso-de-privacidad.html">Aviso de privacidad</a></li>
+                                <li><a href="garantia.html">Garantia</a></li>
+                                <li><a href="nosotros.html">Nosotros</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="como-funciona.html">Como Funciona</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!--enlaces-->
+
+
+        <div class="spacer"></div>
+                
+	    <div class="end-bar">©2017 inverspot.mx | All Rights reserved</div>
+
+
+        
+        <!--Modal de Registro y de Ingreso-->
+        <div class="modal fade login" id="loginModal">
+		      <div class="modal-dialog login animated">
+                   
+                    <!--Cabecera del Modal-->
+    		      <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    		        <div class="modal-header header-holder">
+					<div class="modal-tit" style="">Bienvenido a</div>
+					<img src="style/images/inverspot.png" class="img-fluid-login" alt="Responsive image">
+                    <br><br>
+                    </div>
+                    
+                    <!--Modal de Login-->
+                    <div class="modal-body">  
+                        <div class="box">
+                                <div class="content registerBox" style="display:none;">
+                                     <div class="form">
+                                        <h1>Regístrate <small style="color: #4B118E;"> Ingresa tus datos</small></h1>
+                                        
+                                        <hr>
+
+                                        <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8" data-toggle="validator" role="form">
+
+                                        <div class="form-group">
+                                                <input type="text" class="form-control input-sm"id="name" placeholder="Tu nombre" required="required">
+
+                                                <input id="email" class="form-control input-sm" type="email" data-error="La dirección de correo es invalida"   placeholder="Email" name="email" required="required">
+
+                                                <input id="password" class="form-control input-sm" type="password" placeholder="Password" name="password" required="required">
+
+                                                <input id="password_confirmation" class="form-control input-sm" type="password" placeholder="Repeat Password" name="password_confirmation" required="required">
+
+                                                <input type="text" class="form-control input-sm" name="phone" id="phone" placeholder="Tu teléfono" required="required" />
+
+                                                <div class="control-group">
+                                                    <div class="select" style="margin-bottom: 5px;">
+                                                        <select id="subject" name="subject" class="form-control" required="required" style="height: 30px;">
+                                                            <option value="na" selected="">¿Quién te atendió?</option>
+                                                            <option value="asesor1">Nombre de Asesor 1</option>
+                                                            <option value="asesor2">Nombre de Asesor 2</option>
+                                                        </select>
+                                                        <div class="select__arrow"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="control-group">
+                                                    <div class="select" style="margin-bottom: 5px;">
+                                                        <select id="subject" name="subject" class="form-control" required="required" style="height: 30px;">
+                                                            <option value="na" selected="">Estado</option>
+                                                            <option value="Agu">Aguascalientes</option>
+                                                            <option value="Bc">Baja California</option>
+                                                            <option value="Bcs">Baja California Sur</option>
+                                                            <option value="Cam">Campeche</option>
+                                                            <option value="Chis">Chiapas</option>
+                                                            <option value="Chi">Chihuahua</option>
+                                                            <option value="Cdm">Ciudad de México</option>
+                                                            <option value="Coa">Coahuila</option>
+                                                            <option value="Col">Colima</option>
+                                                            <option value="Dur">Durango</option>
+                                                            <option value="Edm">Estado de México</option>
+                                                            <option value="Gua">Guanajuato</option>
+                                                            <option value="Gue">Guerrero</option>
+                                                            <option value="Hid">Hidalgo</option>
+                                                            <option value="Jal">Jalisco</option>
+                                                            <option value="Mic">Michoacán</option>
+                                                            <option value="Mor">Morelos</option>
+                                                            <option value="Nay">Nayarit</option>
+                                                            <option value="Nle">Nuevo León</option>
+                                                            <option value="Oax">Oaxaca</option>
+                                                            <option value="Pue">Puebla</option>
+                                                            <option value="Qro">Querétaro</option>
+                                                            <option value="Qur">Quintana Roo</option>
+                                                            <option value="Snl">San Luis Potosí</option>
+                                                            <option value="Sin">Sinaloa</option>
+                                                            <option value="Son">Sonora</option>
+                                                            <option value="Tab">Tabasco</option>
+                                                            <option value="Tam">Tamaulipas</option>
+                                                            <option value="Tla">Tlaxcala</option>
+                                                            <option value="Ver">Veracruz</option>
+                                                            <option value="Yuc">Yucatán</option>
+                                                            <option value="Zac">Zacatecas</option>
+                                                        </select>
+                                                        <div class="select__arrow"></div>
+                                                    </div>
+                                            </div>
+
+                                            <div class="control-group">
+                                                <div class="select" style="margin-bottom: 5px;">
+                                                    <select id="subject" name="subject" class="form-control" required="required" style="height: 30px;">
+                                                        <option>¿Cómo nos conociste?</option>
+                                                        <option value="Facebook">Facebook</option>
+                                                        <option value="Twitter">Twitter</option>
+                                                        <option value="Google">Google</option>
+                                                        <option value="Asesor">Asesor</option>
+                                                        <option value="Otro">Otro</option>
+                                                    </select>
+                                                    <div class="select__arrow"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="input-group" style="float: left; margin-left: 10px;">
+                                              <div class="checkbox">
+                                                  <label style="font-size: 12px;">
+                                                      <input id="login-remember" type="checkbox" name="remember" value="1"> Acepto avisos de política y privacidad             
+                                                  </label>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid">
+                                          <div class="row">
+                                            <div class="col-sm-6">
+                                                <button class="loginBtn loginBtn--facebook">Sing in with Facebook</button>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input class="button btn-register" style="margin-left: 10px; padding: 15px 0px;" type="submit" value="Enviar" name="commit">
+                                            </div>
+                                          </div>
+                                        </div> 
+                                       
+                                      </form>
+                                    </div>
+                               </div>
+                        </div>
+                    </div>
+                    
+                    <!--Modal de Login-->
+                    <div class="modal-body">  
+                        <div class="box">
+                                 <div class="content">
+                                        <div class="form loginBox">
+                                            <h1 style="">Iniciar sesión</h1>
+
+                                            <hr>
+
+                                            <div class="error"></div>
+                                            <form method="post" action="/login" accept-charset="UTF-8">                    
+                                            <input id="email" class="form-control" type="text" placeholder="Usuario o correo electrónico" name="email">
+                                            <input id="password" class="form-control" type="password" placeholder="Contraseña" name="password">
+                                            <div class="input-group" style="float: left; margin-left: 10px;">
+                                              <div class="checkbox">
+                                                  <label style="font-size: 13px;">
+                                                      <input id="login-remember" type="checkbox" name="remember" value="1"> No cerrar sesión              
+                                                  </label>
+                                              </div>
+                                            </div>
+                                            <div class="control control-login" style="margin-top: 8px;">
+                                                <a  data-target="#pwdModal" data-toggle="modal" class="close" data-dismiss="modal" style="font-size: 12px; margin-top: 8px; color: black;">
+                                                    ¿Olvide mi contraseña?
+                                                </a>
+                                            </div>
+                                            <br>
+                                            <input class="button btn-login" type="button" value="Enviar" onclick="loginAjax()">
+                                            <hr>
+                                            <a class="btn btn-block btn-social btn-facebook">
+                                                <i class="fa fa-facebook"></i> Login with Facebook
+                                            </a><br>
+
+
+                                            </form>
+                                        </div>
+                                 </div>
+                        </div>
+                    </div>
+                    
+                    <!--Footer del Modal-->
+                    <div class="modal-footer">
+                        <div class="forgot login-footer">                        
+                            <span>¿No tienes una cuenta?
+                                 <a href="javascript: showRegisterForm();" style="font-size: 14px;">Registrate con Nosotros</a></span>
+                        </div>
+                        <div class="forgot register-footer">
+                             <span>Ya tengo mi cuenta</span>
+                             <a href="javascript: showLoginForm();" style="font-size: 14px;">Ingresa</a>
+                        </div>
+                    </div>        
+    		      </div>
+		      </div>
+		  </div>
+        <!--modal de Registro y de Ingreso-->
+
+
+
+        <!--Modal de Recuperación de Contraseña-->
+        <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content" style="width: 100%; background-color: #4B118E;">
+              <div class="modal-header" style="border-bottom: 1px solid #4b118e;">
+
+              </div>
+              <div class="modal-body">
+                  <div class="col-sm-12">
+                        <img class="img-responsive center-block" src="style/images/inverspot.png"/>
+                        <div class="spacer"></div>
+                        <p class="text-center text-modal">Recuperación de contraseña</p>
+                        <br>
+                        <p class="text-center" style="font-size: 16px; font:weight: 900; color: white;">Escríbe el correo electrónico con el que te has registrado</p>
+                  </div>
+                  <div class="col-md-12">
+                        <div class="panel panel-default" style="background-color: #4B118E;">
+                            <div class="panel-body" style="background-color: #4B118E;">
+                            <fieldset style="border: 1px solid #4b118e;">
+                                <div class="col-sm-8 form-group">
+                                    <input class="form-control input-lg" name="email" type="email" style="margin-top: 10px; font-family: AvenirNext-Bold; font-size: 20px; color: #4b118e;">
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="button large-invertion" style="margin-top: 10px;" data-toggle="modal" data-target="#invertir-modal2" class="close" data-dismiss="modal">Enviar</button>
+                                </div>
+                            </fieldset>
+                            </div>
+                        </div>
+                        <p class="text-center" style="font-size: 16px; font:weight: 900; color: white;">En caso de no recordar tu correo por favor<br>comunicate con nosotros y un asesor te atenderá.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!--modal de Recuperación de Contraseña-->
+
+
+
+<script src="/script/inverspot.min.js"></script>
+<script src="/script/user.js"></script>
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 3000
+    })
+  });
+</script>
+<script>
+$(function(){
+    $('#show').on('click',function(){        
+        $('.card-reveal').slideToggle('slow');
+    });
+    
+    $('.card-reveal .close').on('click',function(){
+        $('.card-reveal').slideToggle('slow');
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+$(".btn-pref .btn").click(function () {
+    $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+    // $(".tab").addClass("active"); // instead of this do the below 
+    $(this).removeClass("btn-default").addClass("btn-primary");   
+});
+});
+</script>
+<script>
+    $(document).ready(function() {
+        $('.fancybox').fancybox({
+            padding : 0,
+            openEffect  : 'elastic',
+            closeBtn: false
+        });
+    });
+</script>
+
+
+<!-- Google Code para etiquetas de remarketing -->
+<!--------------------------------------------------
+Es posible que las etiquetas de remarketing todavía no estén asociadas a la información de identificación personal o que estén en páginas relacionadas con las categorías delicadas. Para obtener más información e instrucciones sobre cómo configurar la etiqueta, consulte http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 862664953;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/862664953/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+</body >
+</html >
